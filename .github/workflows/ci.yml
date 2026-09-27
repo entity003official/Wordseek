@@ -33,7 +33,7 @@ jobs:
           BEYOND_WORDS_AUTO_CREATE_SCHEMA: "true"
       - run: alembic upgrade head
         env:
-          BEYOND_WORDS_DATABASE_URL: sqlite:///./backend/data/ci.db
+          BEYOND_WORDS_DATABASE_URL: sqlite:///./ci.db
       - run: docker compose config
         env:
           POSTGRES_PASSWORD: ci-password-not-for-production
