@@ -1,0 +1,53 @@
+name: verify
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - run: npm audit --audit-level=high
+
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: pip }
+      - run: pip install -r backend/requirements.txt
+      - run: python -m unittest discover -s backend/tests -v
+        env:
+          BEYOND_WORDS_ASR_MODE: mock
+          BEYOND_WORDS_MOCK_ANALYSIS: "true"
+          BEYOND_WORDS_AUTO_CREATE_SCHEMA: "true"
+      - run: alembic upgrade head
+        env:
+          BEYOND_WORDS_DATABASE_URL: sqlite:///./backend/data/ci.db
+      - run: docker compose config
+        env:
+          POSTGRES_PASSWORD: ci-password-not-for-production
+          MINIO_ROOT_USER: ci-user
+          MINIO_ROOT_PASSWORD: ci-password-not-for-production
+          BEYOND_WORDS_SESSION_SECRET: ci-session-secret-not-for-production
+
+  images:
+    runs-on: ubuntu-latest
+    needs: [frontend, backend]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/build-push-action@v6
+        with: { context: ., push: false, tags: beyond-words-web:ci }
+      - uses: docker/build-push-action@v6
+        with: { context: ., file: backend/Dockerfile, push: false, tags: beyond-words-api:ci }

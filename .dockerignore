@@ -1,0 +1,14 @@
+.git
+.venv
+node_modules
+dist
+.npm-cache
+.pip-cache
+api-key
+backend/data
+evaluation/raw
+evaluation/derived
+handoff
+archive
+*.zip
+*.log

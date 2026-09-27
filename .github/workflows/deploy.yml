@@ -1,0 +1,77 @@
+name: release-containers
+
+on:
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: "Build, push, and deploy to the configured production environment"
+        required: true
+        default: false
+        type: boolean
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    outputs:
+      tag: ${{ steps.meta.outputs.tag }}
+      prefix: ${{ steps.meta.outputs.prefix }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - id: meta
+        shell: bash
+        run: |
+          echo "prefix=ghcr.io/${GITHUB_REPOSITORY,,}" >> "$GITHUB_OUTPUT"
+          echo "tag=${GITHUB_SHA::12}" >> "$GITHUB_OUTPUT"
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta.outputs.prefix }}-web:${{ steps.meta.outputs.tag }}
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: backend/Dockerfile
+          push: true
+          tags: ${{ steps.meta.outputs.prefix }}-api:${{ steps.meta.outputs.tag }}
+
+  deploy:
+    needs: publish
+    if: github.event_name == 'push' || inputs.deploy
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Configure SSH
+        shell: bash
+        env:
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s' "$DEPLOY_SSH_KEY" > ~/.ssh/beyond_words_deploy
+          chmod 600 ~/.ssh/beyond_words_deploy
+          ssh-keyscan -p "${DEPLOY_PORT:-22}" -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts
+      - name: Pull and restart the immutable release
+        shell: bash
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+          IMAGE_PREFIX: ${{ needs.publish.outputs.prefix }}
+          IMAGE_TAG: ${{ needs.publish.outputs.tag }}
+        run: |
+          ssh -i ~/.ssh/beyond_words_deploy -p "${DEPLOY_PORT:-22}" "$DEPLOY_USER@$DEPLOY_HOST" \
+            "cd '$DEPLOY_PATH' && BEYOND_WORDS_WEB_IMAGE='$IMAGE_PREFIX-web:$IMAGE_TAG' BEYOND_WORDS_API_IMAGE='$IMAGE_PREFIX-api:$IMAGE_TAG' docker compose pull && BEYOND_WORDS_WEB_IMAGE='$IMAGE_PREFIX-web:$IMAGE_TAG' BEYOND_WORDS_API_IMAGE='$IMAGE_PREFIX-api:$IMAGE_TAG' docker compose up -d --no-build --remove-orphans"

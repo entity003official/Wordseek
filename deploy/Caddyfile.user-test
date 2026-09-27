@@ -1,0 +1,32 @@
+{
+    auto_https off
+}
+
+:8080 {
+    encode zstd gzip
+    header {
+        X-Content-Type-Options "nosniff"
+        Referrer-Policy "same-origin"
+        Permissions-Policy "camera=(), microphone=(self)"
+        Content-Security-Policy "default-src 'self'; connect-src 'self'; img-src 'self' data: blob:; media-src 'self' blob:; style-src 'self' 'unsafe-inline'; script-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+        X-Frame-Options "DENY"
+    }
+    handle /api/* {
+        reverse_proxy api:8000
+    }
+    handle {
+        reverse_proxy web:8080
+    }
+    log {
+        output stdout
+        format filter {
+            wrap json
+            fields {
+                request>headers>Authorization delete
+                request>headers>Cookie delete
+                request>headers>X-Csrf-Token delete
+                resp_headers>Set-Cookie delete
+            }
+        }
+    }
+}

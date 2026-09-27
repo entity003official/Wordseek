@@ -1,0 +1,98 @@
+{
+  "dataset": "Taskmaster-1",
+  "dataset_url": "https://github.com/google-research-datasets/Taskmaster/tree/master/TM-1-2019",
+  "license": "CC BY 4.0",
+  "attribution": "Taskmaster-1 (Byrne et al.), Google Research Datasets",
+  "items": [
+    {
+      "id": "tm1-auto-repair-001",
+      "category": "汽车维修",
+      "title": "说明车辆故障",
+      "prompt": "What's the reason for the appointment?",
+      "hint": "简要描述故障发生的场景、现象和频率，让维修人员能够继续判断。",
+      "rubric": ["直接说明故障", "补充发生场景", "给出一个可追问的细节"],
+      "source": {"split": "woz-dialogs", "instruction_id": "auto-repair-1", "conversation_id": "dlg-0018566e-5d1f-4ea2-9416-2e19da7d8a91", "utterance_index": 13}
+    },
+    {
+      "id": "tm1-auto-repair-002",
+      "category": "汽车维修",
+      "title": "确认送修时间",
+      "prompt": "How about this Friday? Can you drop off the car before 8:30 a.m. for a tune-up?",
+      "hint": "确认你是否方便；如果不方便，给出一个明确的替代日期或时间。",
+      "rubric": ["明确接受或拒绝", "复述关键时间", "必要时提出替代安排"],
+      "source": {"split": "woz-dialogs", "instruction_id": "auto-repair-2", "conversation_id": "dlg-005568e1-3d43-4c8c-acff-0655afd335fd", "utterance_index": 14}
+    },
+    {
+      "id": "tm1-food-ordering-001",
+      "category": "餐饮点单",
+      "title": "确认取餐门店",
+      "prompt": "Which Starbucks did you want to place this order at?",
+      "hint": "说出门店位置，并补充一个能避免选错门店的地标或街道信息。",
+      "rubric": ["给出门店位置", "补充识别信息", "表达自然完整"],
+      "source": {"split": "woz-dialogs", "instruction_id": "coffee-ordering-1", "conversation_id": "dlg-00f001f4-338b-469f-9a12-c24516f0cfc6", "utterance_index": 7}
+    },
+    {
+      "id": "tm1-food-ordering-002",
+      "category": "餐饮点单",
+      "title": "选择披萨配料",
+      "prompt": "Okay, what kind of toppings would you like?",
+      "hint": "列出想要的配料，并说明是否有不要的配料或饮食限制。",
+      "rubric": ["说出至少一种配料", "说明偏好或限制", "信息清楚不含糊"],
+      "source": {"split": "woz-dialogs", "instruction_id": "pizza-ordering-1", "conversation_id": "dlg-005f579e-b0a0-4a72-bde1-8ac3fd035ef2", "utterance_index": 4}
+    },
+    {
+      "id": "tm1-restaurant-001",
+      "category": "餐厅预订",
+      "title": "描述理想餐厅",
+      "prompt": "Okay, sure, and for the restaurant itself, what should it be like?",
+      "hint": "从氛围、预算、菜系或位置中选择两项，说明你的具体要求。",
+      "rubric": ["至少提出两项要求", "使用具体描述", "说明最重要的偏好"],
+      "source": {"split": "woz-dialogs", "instruction_id": "restaurant-table-1", "conversation_id": "dlg-0055a8a3-58ce-486e-9d40-298ed421137a", "utterance_index": 6}
+    },
+    {
+      "id": "tm1-restaurant-002",
+      "category": "餐厅预订",
+      "title": "确认餐桌预订",
+      "prompt": "They have a table available for two to four people at 7 p.m. Should I book it?",
+      "hint": "确认人数和时间是否合适，再清楚说明是否预订。",
+      "rubric": ["明确是否预订", "确认人数", "确认时间"],
+      "source": {"split": "woz-dialogs", "instruction_id": "restaurant-table-1", "conversation_id": "dlg-0055a8a3-58ce-486e-9d40-298ed421137a", "utterance_index": 22}
+    },
+    {
+      "id": "tm1-movie-tickets-001",
+      "category": "电影票务",
+      "title": "处理场次售罄",
+      "prompt": "I am really sorry, but this showtime is already sold out. Would you like to see if another time has available tickets?",
+      "hint": "回应售罄信息，并给出你能接受的新时间范围。",
+      "rubric": ["回应售罄情况", "说明是否查找其他场次", "给出时间偏好"],
+      "source": {"split": "woz-dialogs", "instruction_id": "movie-tickets-2", "conversation_id": "dlg-00028478-84a9-4ca7-a3e2-be514a3b8c9d", "utterance_index": 19}
+    },
+    {
+      "id": "tm1-movie-tickets-002",
+      "category": "电影票务",
+      "title": "选择更早场次",
+      "prompt": "Would you like to find an earlier session?",
+      "hint": "说明是否需要更早的场次，并给出最早或最晚可接受的时间。",
+      "rubric": ["明确回答问题", "给出时间范围", "保持礼貌自然"],
+      "source": {"split": "woz-dialogs", "instruction_id": "movie-tickets-2", "conversation_id": "dlg-000c3cb6-9a3b-4cd8-bd31-c6580d4e71c1", "utterance_index": 16}
+    },
+    {
+      "id": "tm1-rideshare-001",
+      "category": "出行叫车",
+      "title": "确认接车时间",
+      "prompt": "Sure, and did you want to schedule that for right now to pick you up?",
+      "hint": "说明现在出发还是预约，并给出准确的接车时间。",
+      "rubric": ["明确现在或预约", "提供具体时间", "回答简洁清楚"],
+      "source": {"split": "woz-dialogs", "instruction_id": "uber-lyft-1", "conversation_id": "dlg-00a24129-bee3-41fe-8b84-5210ab201005", "utterance_index": 3}
+    },
+    {
+      "id": "tm1-rideshare-002",
+      "category": "出行叫车",
+      "title": "说明乘车人数",
+      "prompt": "How many passengers will there be?",
+      "hint": "说明乘客人数；如果有大件行李或特殊需求，也一并告诉司机。",
+      "rubric": ["给出准确人数", "补充行李或特殊需求", "使用完整句子"],
+      "source": {"split": "woz-dialogs", "instruction_id": "uber-lyft-1", "conversation_id": "dlg-00b17a05-8e9d-40db-948a-cad0762a8c20", "utterance_index": 7}
+    }
+  ]
+}

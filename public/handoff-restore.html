@@ -1,0 +1,22 @@
+<!doctype html><meta charset="utf-8"><title>恢复浏览器备份</title>
+<h1>恢复浏览器备份</h1>
+<p>仅在队友的项目副本中使用。先登录数据所属账号，再选择 outputs/private-handoff/browser-snapshot.json。</p>
+<p>将覆盖本网站的同名本地设置和录音；不会修改其他网站或自动登录。麦克风设备需在新电脑重新选择。</p>
+<input id="file" type="file" accept="application/json" aria-label="选择浏览器备份文件">
+<button id="restore">恢复选中的备份</button><p id="status"></p><a href="/">返回首页</a>
+<script>
+document.querySelector('#restore').onclick = async () => {
+ const status=document.querySelector('#status');
+ try {
+  const file=document.querySelector('#file').files[0]; if(!file)throw new Error('请选择备份文件');
+  const snapshot=JSON.parse(await file.text());
+  if(!Array.isArray(snapshot.recordings)||!snapshot.localStorage)throw new Error('备份格式不正确');
+  if(!confirm('覆盖当前网站的同名本地数据？请只在交接副本中操作。'))return;
+  const db=await new Promise((resolve,reject)=>{const r=indexedDB.open('beyond-words-audio',1);r.onupgradeneeded=()=>r.result.createObjectStore('recordings');r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);});
+  const rows=snapshot.recordings.map(row=>{const comma=row.data.indexOf(',');const bytes=Uint8Array.from(atob(row.data.slice(comma+1)),c=>c.charCodeAt(0));return {key:row.key,blob:new Blob([bytes],{type:row.type})};});
+  await new Promise((resolve,reject)=>{const tx=db.transaction('recordings','readwrite');for(const row of rows)tx.objectStore('recordings').put(row.blob,row.key);tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error);});db.close();
+  for(const [key,value] of Object.entries(snapshot.localStorage)){if(key.startsWith('beyond-words')&&key!=='beyond-words-audio-device'&&typeof value==='string')localStorage.setItem(key,value);}
+  status.textContent=`恢复完成：${rows.length} 段录音。请返回首页。`;
+ }catch(error){status.textContent='恢复失败：'+error.message;}
+};
+</script>

@@ -1,0 +1,54 @@
+/* Shared native selects: preserve touch pickers and keyboard navigation. */
+#root select {
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  min-width: 0;
+  max-width: 100%;
+  height: 44px;
+  min-height: 44px;
+  padding: 0 38px 0 12px;
+  border: 1px solid #dfe3e7;
+  border-radius: 10px;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23666d76' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m7 10 5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  color: var(--app-text, #202326);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0;
+  text-align: start;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-shadow: none;
+  cursor: pointer;
+  transition: border-color .15s ease, background-color .15s ease;
+}
+#root select:hover:not(:disabled) { border-color: #acb3bb; }
+#root select:focus { box-shadow: none; }
+#root select:focus-visible { border-color: #6d7782; outline: 2px solid #8a949e; outline-offset: 2px; }
+#root select:disabled { opacity: .55; cursor: not-allowed; background-color: #f1f3f5; }
+#root select option { background: #fff; color: #202326; font-weight: 400; }
+#root .scenario-select > div > svg { display: none; }
+#root .language-settings { align-items: start; }
+#root .language-settings label { min-width: 0; margin: 0; }
+#root .language-settings label > span { margin: 0; font-size: 13px; line-height: 20px; color: var(--app-secondary); letter-spacing: 0; }
+#root .language-settings.is-compact { display: flex; align-items: center; gap: 8px; padding: 0; margin: 0 0 12px; background: transparent; }
+#root .language-settings.is-compact label { display: flex; flex-direction: row; align-items: center; gap: 12px; max-width: 100%; }
+#root .language-settings.is-compact label > span { display: flex; align-items: center; min-height: 44px; flex-shrink: 0; }
+#root .language-settings.is-compact select { width: 132px; min-width: 0; flex: 0 1 132px; margin: 0; }
+#root .practice-category-select { width: 100%; margin: 0 0 16px; }
+#root .transcript-editor-meta select { width: auto; max-width: 140px; margin-left: auto; font-size: 13px; }
+#root .date-format-setting.is-compact select { height: 100%; min-height: 0; padding: 0; opacity: 0; }
+@media (max-width: 360px) {
+  #root .language-settings:not(.is-compact) { grid-template-columns: 1fr; }
+  #root .language-settings.is-compact label { gap: 8px; }
+  #root .language-settings.is-compact select { width: 120px; flex-basis: 120px; }
+}
+@media (forced-colors: active) {
+  #root select { appearance: auto; background-image: none; }
+}

@@ -1,0 +1,2594 @@
+{
+  "首页": [
+    "Home",
+    "ホーム"
+  ],
+  "复盘": [
+    "Review",
+    "振り返り"
+  ],
+  "练习": [
+    "Practice",
+    "練習"
+  ],
+  "我的": [
+    "Profile",
+    "マイページ"
+  ],
+  "主导航": [
+    "Main navigation",
+    "メインナビゲーション"
+  ],
+  "语言设置": [
+    "Languages",
+    "言語設定"
+  ],
+  "我的母语": [
+    "My native language",
+    "母語"
+  ],
+  "我想学": [
+    "I'm learning",
+    "学習する言語"
+  ],
+  "语言设置保存失败，请重试。": [
+    "Couldn't save languages. Try again.",
+    "言語を保存できませんでした。再試行してください。"
+  ],
+  "保存中…": [
+    "Saving…",
+    "保存中…"
+  ],
+  "个人设置": [
+    "Settings",
+    "設定"
+  ],
+  "开始录音": [
+    "Record a conversation",
+    "録音する"
+  ],
+  "本周进度": [
+    "Weekly progress",
+    "今週の進捗"
+  ],
+  "本周学习": [
+    "This week",
+    "今週の学習"
+  ],
+  "查看本周对话": [
+    "This week's conversations",
+    "今週の会話を見る"
+  ],
+  "次对话": [
+    "conversations",
+    "回の会話"
+  ],
+  "次对话 ·": [
+    "conversations ·",
+    "回の会話 ·"
+  ],
+  "查看本周开口时长明细": [
+    "View speaking time",
+    "発話時間を見る"
+  ],
+  "开口时长": [
+    "Speaking time",
+    "発話時間"
+  ],
+  "进入表达练习": [
+    "Open practice",
+    "練習を開く"
+  ],
+  "次练习": [
+    "practices",
+    "回の練習"
+  ],
+  "已连续记录": [
+    "Streak",
+    "連続記録"
+  ],
+  "天": [
+    "days",
+    "日"
+  ],
+  "最近复盘": [
+    "Recent conversations",
+    "最近の会話"
+  ],
+  "查看全部": [
+    "View all",
+    "すべて見る"
+  ],
+  "录下第一段对话后，在这里复盘": [
+    "Your recorded conversations appear here.",
+    "録音した会話がここに表示されます。"
+  ],
+  "表达练习": [
+    "Speaking practice",
+    "会話練習"
+  ],
+  "开始练习": [
+    "Start practicing",
+    "練習する"
+  ],
+  "学习热力日历": [
+    "Learning activity calendar",
+    "学習カレンダー"
+  ],
+  "学习日历": [
+    "Activity",
+    "学習記録"
+  ],
+  "切换到近13周": [
+    "Show 13 weeks",
+    "13週間を表示"
+  ],
+  "切换到近一年": [
+    "Show past year",
+    "過去1年を表示"
+  ],
+  "近一年": [
+    "Past year",
+    "過去1年"
+  ],
+  "近13周": [
+    "13 weeks",
+    "13週間"
+  ],
+  "一": [
+    "M",
+    "月"
+  ],
+  "三": [
+    "W",
+    "水"
+  ],
+  "五": [
+    "F",
+    "金"
+  ],
+  "日": [
+    "S",
+    "日"
+  ],
+  "颜色越深表示当天学习次数越多": [
+    "Darker squares mean more learning activity.",
+    "濃い色ほど学習回数が多い日です。"
+  ],
+  "少": [
+    "Less",
+    "少"
+  ],
+  "多": [
+    "More",
+    "多"
+  ],
+  "查看对话": [
+    "Conversations",
+    "会話を見る"
+  ],
+  "延续话题": [
+    "Develop a topic",
+    "話題を広げる"
+  ],
+  "主动提问": [
+    "Ask questions",
+    "自分から質問する"
+  ],
+  "参与小组讨论": [
+    "Join discussions",
+    "議論に参加する"
+  ],
+  "请求澄清": [
+    "Ask for clarification",
+    "聞き返す"
+  ],
+  "我的目标": [
+    "My goal",
+    "学習目標"
+  ],
+  "已保存的对话": [
+    "Saved conversations",
+    "保存した会話"
+  ],
+  "已完成的练习": [
+    "Completed practices",
+    "完了した練習"
+  ],
+  "新手引导": [
+    "Getting started",
+    "使い方ガイド"
+  ],
+  "对话历史": [
+    "Conversation history",
+    "会話履歴"
+  ],
+  "管理控制台": [
+    "Admin console",
+    "管理画面"
+  ],
+  "AI 洞察": [
+    "AI insights",
+    "AI分析"
+  ],
+  "已开启": [
+    "On",
+    "オン"
+  ],
+  "已关闭": [
+    "Off",
+    "オフ"
+  ],
+  "开启或关闭 AI 洞察": [
+    "Toggle AI insights",
+    "AI分析を切り替える"
+  ],
+  "服务与隐私详情": [
+    "Services and privacy",
+    "サービスとプライバシー"
+  ],
+  "删除 AI 生成内容": [
+    "Delete AI content",
+    "AI生成内容を削除"
+  ],
+  "退出登录": [
+    "Sign out",
+    "ログアウト"
+  ],
+  "目标保存失败，请重试。": [
+    "Couldn't save your goal. Try again.",
+    "目標を保存できませんでした。再試行してください。"
+  ],
+  "设置保存失败。": [
+    "Couldn't save settings.",
+    "設定を保存できませんでした。"
+  ],
+  "AI 分析已开启。你可以在复盘页预览并生成 AI 结果。": [
+    "AI insights enabled. Preview and generate them from a review.",
+    "AI分析を有効にしました。振り返り画面から生成できます。"
+  ],
+  "AI 分析已关闭，之后不会产生新的模型请求。": [
+    "AI insights disabled. No new model requests will be made.",
+    "AI分析を無効にしました。新たなモデルへの送信は行いません。"
+  ],
+  "AI 生成内容已经删除。": [
+    "AI content deleted.",
+    "AI生成内容を削除しました。"
+  ],
+  "确定删除账号下全部 AI 生成内容吗？原始录音、转写和本地规则分析会保留。": [
+    "Delete all AI-generated content? Recordings, transcripts and local feedback will remain.",
+    "AI生成内容をすべて削除しますか？録音、文字起こし、ローカル分析は残ります。"
+  ],
+  "开启后，系统会把经过基础脱敏的对话文本发送给 DeepSeek 进行总结、场景分析、出题和练习反馈。不会发送原始录音。自动脱敏不能保证识别全部人名或特殊隐私，是否继续？": [
+    "Enable AI? Transcripts with basic redaction will be sent to DeepSeek for reviews and practice. Recordings are not sent. Redaction may miss personal details.",
+    "AIを有効にしますか？基本的な匿名化をした会話文をDeepSeekに送り、分析や練習に使用します。録音は送りません。個人情報が完全に除去される保証はありません。"
+  ],
+  "开启后仅将基础脱敏的转写发送给 DeepSeek，不发送原始录音。生成内容会保留来源与证据话轮。": [
+    "Only transcripts with basic redaction go to DeepSeek, not recordings. Results retain their sources and supporting turns.",
+    "基本的な匿名化をした会話文のみをDeepSeekに送ります。録音は送信しません。生成内容には出典と根拠の発言を残します。"
+  ],
+  "全部": [
+    "All",
+    "すべて"
+  ],
+  "大类": [
+    "Category",
+    "大カテゴリー"
+  ],
+  "小类": [
+    "Scenario",
+    "小カテゴリー"
+  ],
+  "全部大类": [
+    "All categories",
+    "すべての大カテゴリー"
+  ],
+  "全部小类": [
+    "All scenarios",
+    "すべての小カテゴリー"
+  ],
+  "关系": [
+    "Relationship",
+    "関係"
+  ],
+  "语体": [
+    "Register",
+    "話し方"
+  ],
+  "换一批": [
+    "Show another set",
+    "別の素材を見る"
+  ],
+  "练习来源": [
+    "Practice source",
+    "練習素材の出典"
+  ],
+  "载入中": [
+    "Loading",
+    "読み込み中"
+  ],
+  "正在加载题目…": [
+    "Loading question…",
+    "問題を読み込み中…"
+  ],
+  "复练真实互动": [
+    "Practice this conversation",
+    "この会話を練習する"
+  ],
+  "互动练习": [
+    "Conversation practice",
+    "会話練習"
+  ],
+  "选择练习场景": [
+    "Choose a scenario",
+    "場面を選ぶ"
+  ],
+  "汽车维修": [
+    "Car repair",
+    "車の修理"
+  ],
+  "餐饮点单": [
+    "Ordering food",
+    "注文"
+  ],
+  "餐厅预订": [
+    "Restaurant reservations",
+    "レストラン予約"
+  ],
+  "电影票务": [
+    "Movie tickets",
+    "映画のチケット"
+  ],
+  "出行叫车": [
+    "Booking a ride",
+    "配車"
+  ],
+  "切换语言会清空当前未提交的回答，继续吗？": [
+    "Switch languages and discard this unsent answer?",
+    "言語を切り替えると未送信の回答が消えます。続けますか？"
+  ],
+  "练习素材加载失败": [
+    "Couldn't load practice material.",
+    "練習を読み込めませんでした。"
+  ],
+  "正在重试…": [
+    "Retrying…",
+    "再試行中…"
+  ],
+  "重试": [
+    "Try again",
+    "再試行"
+  ],
+  "AI 练习暂时无法加载": [
+    "Couldn't load AI practice.",
+    "AI練習を読み込めませんでした。"
+  ],
+  "还没有 AI 生成的练习": [
+    "No AI practice yet.",
+    "AI練習はまだありません。"
+  ],
+  "打开练习库": [
+    "Browse practice",
+    "練習一覧へ"
+  ],
+  "对方": [
+    "Partner",
+    "相手"
+  ],
+  "暂停题目语音": [
+    "Pause audio",
+    "音声を一時停止"
+  ],
+  "播放题目语音": [
+    "Play audio",
+    "音声を再生"
+  ],
+  "你的回答": [
+    "Your answer",
+    "あなたの回答"
+  ],
+  "麦克风": [
+    "Microphone",
+    "マイク"
+  ],
+  "系统默认": [
+    "System default",
+    "システム既定"
+  ],
+  "说出或输入你的回答…": [
+    "Say or type your answer…",
+    "話すか、回答を入力…"
+  ],
+  "停止并转写": [
+    "Stop and transcribe",
+    "停止して文字起こし"
+  ],
+  "转写已采集的录音片段": [
+    "Transcribe recorded audio",
+    "録音済みの音声を文字起こし"
+  ],
+  "使用语音回答": [
+    "Answer by voice",
+    "音声で回答"
+  ],
+  "麦克风音量": [
+    "Microphone level",
+    "マイク音量"
+  ],
+  "秒 · 再次点击完成": [
+    "s · Tap again to finish",
+    "秒 · もう一度タップして終了"
+  ],
+  "当前声音很低，请检查麦克风是否静音或选错设备。": [
+    "Input is very quiet. Check the microphone and mute settings.",
+    "音量が小さいです。マイクの選択とミュート設定を確認してください。"
+  ],
+  "试听本次录音": [
+    "Listen to your recording",
+    "録音を聞く"
+  ],
+  "重试转写": [
+    "Retry transcription",
+    "文字起こしを再試行"
+  ],
+  "正在转写…": [
+    "Transcribing…",
+    "文字起こし中…"
+  ],
+  "录音中断，点击麦克风转写已采集片段": [
+    "Recording interrupted. Tap the mic to transcribe what was captured.",
+    "録音が中断しました。マイクを押すと録音済みの部分を文字起こしできます。"
+  ],
+  "正在生成反馈…": [
+    "Preparing feedback…",
+    "フィードバックを生成中…"
+  ],
+  "提交回答": [
+    "Submit answer",
+    "回答を送信"
+  ],
+  "完成一次练习": [
+    "Practice complete",
+    "練習完了"
+  ],
+  "这次回应不错": [
+    "Your feedback",
+    "フィードバック"
+  ],
+  "反馈仅供练习参考。": [
+    "Feedback is for practice only.",
+    "練習の参考としてご利用ください。"
+  ],
+  "下一题": [
+    "Next question",
+    "次の問題"
+  ],
+  "反馈来源": [
+    "Feedback source",
+    "フィードバックの出典"
+  ],
+  "本次反馈由 AI 根据你的回答生成。": [
+    "AI generated this feedback from your answer.",
+    "回答に基づいてAIが生成したフィードバックです。"
+  ],
+  "本次反馈来自本地交流策略规则。": [
+    "This feedback uses local communication rules.",
+    "ローカルの会話ルールに基づくフィードバックです。"
+  ],
+  "语音回答": [
+    "Voice answer",
+    "音声回答"
+  ],
+  "允许语音转写？": [
+    "Allow transcription?",
+    "文字起こしを許可しますか？"
+  ],
+  "关闭": [
+    "Close",
+    "閉じる"
+  ],
+  "这次练习录音会临时发送给阿里云千问转成文字；也可以关闭后直接打字。": [
+    "This recording will be sent to Alibaba Cloud Qwen for transcription. You can type instead.",
+    "この録音をAlibaba CloudのQwenに送信して文字起こしします。閉じて文字入力もできます。"
+  ],
+  "允许并开始": [
+    "Allow and start",
+    "許可して開始"
+  ],
+  "继续文字回答": [
+    "Type instead",
+    "文字で回答する"
+  ],
+  "浏览器无法播放这段语音，请再试一次。": [
+    "Couldn't play this audio. Try again.",
+    "音声を再生できませんでした。再試行してください。"
+  ],
+  "语音已经生成，但浏览器播放失败。": [
+    "Audio was generated, but playback failed.",
+    "音声は生成されましたが、再生に失敗しました。"
+  ],
+  "语音生成失败，请稍后重试。": [
+    "Audio generation failed. Try again later.",
+    "音声生成に失敗しました。しばらくしてから再試行してください。"
+  ],
+  "无法保存练习，请重试。": [
+    "Couldn't save practice. Try again.",
+    "練習を保存できませんでした。再試行してください。"
+  ],
+  "没有采集到可转写的声音，请检查麦克风后重试。": [
+    "No audio captured. Check your microphone.",
+    "音声を録音できませんでした。マイクを確認してください。"
+  ],
+  "没有识别到语音，请再试一次。": [
+    "No speech detected. Try again.",
+    "音声を認識できませんでした。再試行してください。"
+  ],
+  "语音转写失败。": [
+    "Transcription failed.",
+    "文字起こしに失敗しました。"
+  ],
+  "返回": [
+    "Back",
+    "戻る"
+  ],
+  "完成": [
+    "Done",
+    "完了"
+  ],
+  "搜索": [
+    "Search",
+    "検索"
+  ],
+  "最早": [
+    "Earliest",
+    "最初"
+  ],
+  "今天": [
+    "Today",
+    "今日"
+  ],
+  "· 开口时长": [
+    "· Speaking time",
+    "· 発話時間"
+  ],
+  "搜索标题或场景": [
+    "Search titles or scenarios",
+    "タイトルや場面を検索"
+  ],
+  "搜索对话": [
+    "Search conversations",
+    "会話を検索"
+  ],
+  "段对话": [
+    "conversations",
+    "件の会話"
+  ],
+  "个标记": [
+    "markers",
+    "個のマーク"
+  ],
+  "你的开口时长：": [
+    "Your speaking time:",
+    "あなたの発話時間："
+  ],
+  "暂无已确认话轮": [
+    "No confirmed turns",
+    "確認済みの発言はありません"
+  ],
+  "删除": [
+    "Delete",
+    "削除"
+  ],
+  "没有匹配的对话": [
+    "No matching conversations",
+    "一致する会話がありません"
+  ],
+  "这段时间没有录音记录": [
+    "No recordings in this period",
+    "この期間の録音はありません"
+  ],
+  "还没有复盘记录": [
+    "No conversations yet",
+    "会話の記録はまだありません"
+  ],
+  "仅统计已确认为「你」的话轮；未确认身份时不计入。": [
+    "Only turns confirmed as yours are counted.",
+    "自分の発言として確認したものだけを集計します。"
+  ],
+  "删除失败，请重试。": [
+    "Couldn't delete. Try again.",
+    "削除できませんでした。再試行してください。"
+  ],
+  "删除失败。": [
+    "Couldn't delete.",
+    "削除できませんでした。"
+  ],
+  "录音": [
+    "Record",
+    "録音"
+  ],
+  "日常交流": [
+    "Everyday conversation",
+    "日常会話"
+  ],
+  "语言交流": [
+    "Language exchange",
+    "言語交流"
+  ],
+  "小组讨论": [
+    "Group discussion",
+    "グループ討論"
+  ],
+  "课堂交流": [
+    "Classroom",
+    "授業"
+  ],
+  "面试": [
+    "Interview",
+    "面接"
+  ],
+  "其他": [
+    "Other",
+    "その他"
+  ],
+  "正在录音": [
+    "Recording",
+    "録音中"
+  ],
+  "录音中断，可保存已采集片段": [
+    "Interrupted — save captured audio",
+    "中断しました。録音済みの部分を保存できます"
+  ],
+  "录音已保存": [
+    "Recording saved",
+    "録音を保存しました"
+  ],
+  "录音待保存": [
+    "Recording not saved yet",
+    "録音はまだ保存されていません"
+  ],
+  "等待麦克风权限": [
+    "Waiting for microphone permission",
+    "マイクの許可を待っています"
+  ],
+  "准备就绪": [
+    "Ready",
+    "準備完了"
+  ],
+  "正在连接实时转写…": [
+    "Connecting live transcription…",
+    "リアルタイム文字起こしに接続中…"
+  ],
+  "实时转写": [
+    "Live transcript",
+    "リアルタイム文字起こし"
+  ],
+  "说话后，文字会显示在这里。": [
+    "Your words will appear here.",
+    "話すとここに文字が表示されます。"
+  ],
+  "说话人身份将在录音结束后补全": [
+    "Speakers are identified after recording.",
+    "録音終了後に話者を区別します。"
+  ],
+  "停止并保存录音": [
+    "Stop and save",
+    "停止して保存"
+  ],
+  "保存已采集的录音片段": [
+    "Save captured audio",
+    "録音済みの部分を保存"
+  ],
+  "标记": [
+    "Mark",
+    "マーク"
+  ],
+  "保存片段": [
+    "Save clip",
+    "音声を保存"
+  ],
+  "结束": [
+    "Stop",
+    "終了"
+  ],
+  "录音暂存在当前页面": [
+    "Recording is temporarily held on this page.",
+    "録音はこのページに一時保存されています。"
+  ],
+  "个重点时刻 ·": [
+    "markers ·",
+    "個のマーク ·"
+  ],
+  "正在同步": [
+    "Syncing",
+    "同期中"
+  ],
+  "等待重新同步": [
+    "Needs syncing",
+    "同期待ち"
+  ],
+  "已同步": [
+    "Synced",
+    "同期済み"
+  ],
+  "保存在本机": [
+    "Saved on this device",
+    "この端末に保存済み"
+  ],
+  "本地存储失败": [
+    "Device storage failed",
+    "端末への保存に失敗"
+  ],
+  "正在保存…": [
+    "Saving…",
+    "保存中…"
+  ],
+  "重试保存": [
+    "Retry saving",
+    "保存を再試行"
+  ],
+  "允许分析这段录音": [
+    "Allow analysis of this recording",
+    "この録音の分析を許可する"
+  ],
+  "正在分析…": [
+    "Analyzing…",
+    "分析中…"
+  ],
+  "开始分析": [
+    "Start analysis",
+    "分析を開始"
+  ],
+  "重试上传": [
+    "Retry upload",
+    "アップロードを再試行"
+  ],
+  "再录一段": [
+    "Record again",
+    "もう一度録音"
+  ],
+  "分析与隐私说明": [
+    "Analysis and privacy",
+    "分析とプライバシー"
+  ],
+  "录音准备": [
+    "Before recording",
+    "録音の準備"
+  ],
+  "边录边转写，并在结束后自动补全分析": [
+    "Transcribe live and finish analysis after recording",
+    "録音中に文字起こしし、終了後に分析を完了する"
+  ],
+  "开启后，音频会实时发送至千问；结束后发送完整录音区分说话人。": [
+    "Audio streams to Qwen while recording. The full recording is sent afterward to distinguish speakers.",
+    "録音中の音声をQwenに送信し、終了後に録音全体を送って話者を区別します。"
+  ],
+  "对话场景": [
+    "Scenario",
+    "会話の場面"
+  ],
+  "已取得所有参与者同意": [
+    "Everyone has agreed to recording",
+    "参加者全員の録音同意を得ました"
+  ],
+  "正在获取权限…": [
+    "Requesting permission…",
+    "許可を取得中…"
+  ],
+  "开始录音后才会启用麦克风": [
+    "The mic turns on when you start recording.",
+    "録音を開始してからマイクを使用します。"
+  ],
+  "可以开始分析": [
+    "Ready to analyze",
+    "分析できます"
+  ],
+  "正在检查服务": [
+    "Checking service",
+    "サービスを確認中"
+  ],
+  "分析服务暂不可用": [
+    "Analysis unavailable",
+    "分析サービスを利用できません"
+  ],
+  "正在检查千问语音服务，请稍候。": [
+    "Checking Qwen speech service…",
+    "Qwen音声サービスを確認中…"
+  ],
+  "千问语音服务当前未配置或暂不可用，录音仍可保存，恢复后可以重新发起分析。": [
+    "Qwen is unavailable. You can save recordings and analyze them later.",
+    "Qwenは現在利用できません。録音を保存して、後から分析できます。"
+  ],
+  "经你授权后，本次录音将发送给阿里云百炼千问，生成转写、时间戳并自动区分 1–8 位匿名说话人；随后仍需由你确认自己的身份。": [
+    "With your permission, this recording goes to Alibaba Cloud Qwen for timestamps, transcription and separation of 1–8 anonymous speakers. You then confirm which speaker is you.",
+    "許可すると録音をAlibaba Cloud Qwenに送り、文字起こし、時刻、1〜8人の匿名話者を生成します。その後、自分の話者を確認してください。"
+  ],
+  "请先确认所有参与者均已同意录音。": [
+    "Confirm that everyone agrees to recording first.",
+    "参加者全員の同意を確認してください。"
+  ],
+  "实时转写未连接，已切换为本地录音，结束后可转写。": [
+    "Live transcription unavailable. Recording locally; transcribe after stopping.",
+    "リアルタイム文字起こしに接続できません。端末で録音し、終了後に文字起こしできます。"
+  ],
+  "录音已保存，补全说话人分析未启动，可手动重试。": [
+    "Recording saved. Speaker analysis didn't start; try again manually.",
+    "録音は保存済みです。話者分析は手動で再試行してください。"
+  ],
+  "录音暂存在当前页面，尚未写入本机存储。请重试保存后再离开。": [
+    "Recording isn't saved to this device yet. Retry saving before leaving.",
+    "録音は端末に未保存です。ページを離れる前に保存を再試行してください。"
+  ],
+  "这段录音尚未保存，离开会丢失。仍要离开吗？": [
+    "This recording isn't saved. Leave and lose it?",
+    "録音は未保存です。移動すると失われます。続けますか？"
+  ],
+  "没有采集到可播放的音频，请检查麦克风后重试。": [
+    "No playable audio. Check your microphone and retry.",
+    "再生可能な音声がありません。マイクを確認してください。"
+  ],
+  "请先同意将本次录音发送给阿里云千问，再开始语音分析。": [
+    "Allow sending this recording to Qwen before analysis.",
+    "分析前に、この録音をQwenに送信することを許可してください。"
+  ],
+  "录音尚未同步到后端。请先重试上传，成功后再开始分析。": [
+    "Upload the recording before starting analysis.",
+    "分析の前に録音のアップロードを再試行してください。"
+  ],
+  "分析失败，请稍后重试。": [
+    "Analysis failed. Try again later.",
+    "分析に失敗しました。しばらくしてから再試行してください。"
+  ],
+  "操作": [
+    "Actions",
+    "操作"
+  ],
+  "重命名": [
+    "Rename",
+    "名前を変更"
+  ],
+  "导出复盘": [
+    "Export review",
+    "振り返りを出力"
+  ],
+  "下载录音": [
+    "Download audio",
+    "録音をダウンロード"
+  ],
+  "删除对话": [
+    "Delete conversation",
+    "会話を削除"
+  ],
+  "演示音频不可用": [
+    "Demo audio unavailable",
+    "デモ音声は利用できません"
+  ],
+  "原声暂不可用": [
+    "Audio unavailable",
+    "音声は利用できません"
+  ],
+  "录音同步中": [
+    "Syncing recording",
+    "録音を同期中"
+  ],
+  "同步中…": [
+    "Syncing…",
+    "同期中…"
+  ],
+  "重试同步": [
+    "Retry sync",
+    "同期を再試行"
+  ],
+  "复盘内容": [
+    "Review content",
+    "振り返り内容"
+  ],
+  "转写": [
+    "Transcript",
+    "文字起こし"
+  ],
+  "互动反馈": [
+    "Feedback",
+    "フィードバック"
+  ],
+  "参与统计": [
+    "Participation",
+    "参加状況"
+  ],
+  "你的参与": [
+    "Your participation",
+    "あなたの参加状況"
+  ],
+  "发言时长": [
+    "Speaking time",
+    "発話時間"
+  ],
+  "发言占比": [
+    "Speaking share",
+    "発話の割合"
+  ],
+  "你的话轮": [
+    "Your turns",
+    "あなたの発言数"
+  ],
+  "对话节奏": [
+    "Conversation balance",
+    "会話のバランス"
+  ],
+  "值得回看的时刻": [
+    "Moments to revisit",
+    "振り返りたい場面"
+  ],
+  "确认你的说话人身份后再生成互动提示。": [
+    "Identify your speaker to see personal feedback.",
+    "自分の話者を確認するとフィードバックを生成できます。"
+  ],
+  "暂未发现需要回看的互动时刻。": [
+    "No moments flagged yet.",
+    "振り返り候補はまだありません。"
+  ],
+  "可选": [
+    "Optional",
+    "任意"
+  ],
+  "根据脱敏后的转写生成补充复盘，不发送原始录音。": [
+    "Generate insights from redacted text. No recordings are sent.",
+    "匿名化した会話文で追加分析します。録音は送信しません。"
+  ],
+  "预览内容": [
+    "Preview",
+    "プレビュー"
+  ],
+  "正在生成…": [
+    "Generating…",
+    "生成中…"
+  ],
+  "重新生成": [
+    "Regenerate",
+    "再生成"
+  ],
+  "生成洞察": [
+    "Generate insights",
+    "分析を生成"
+  ],
+  "将发送的脱敏文字": [
+    "Redacted text to send",
+    "送信する匿名化済みの会話文"
+  ],
+  "复盘总结": [
+    "Summary",
+    "まとめ"
+  ],
+  "场景 ·": [
+    "Scene ·",
+    "場面 ·"
+  ],
+  "生成 3 道练习": [
+    "Create 3 exercises",
+    "練習を3問作成"
+  ],
+  "脱敏转写由 DeepSeek 生成补充分析；结论必须引用现有话轮，并需结合原声核对。": [
+    "DeepSeek analyzes redacted text. Check cited turns against the recording.",
+    "DeepSeekが匿名化した会話文を分析します。引用された発言は録音と照合してください。"
+  ],
+  "搜索转写": [
+    "Search transcript",
+    "文字起こしを検索"
+  ],
+  "搜索对话内容": [
+    "Search conversation text",
+    "会話の内容を検索"
+  ],
+  "句": [
+    "turns",
+    "発言"
+  ],
+  "更改我的说话人": [
+    "Change my speaker",
+    "自分の話者を変更"
+  ],
+  "确认哪位说话人是我": [
+    "Identify my speaker",
+    "自分の話者を確認"
+  ],
+  "标记自己和伙伴": [
+    "Label me and others",
+    "自分と相手を設定"
+  ],
+  "已标记自己和伙伴": [
+    "Me and others labeled",
+    "自分と相手を設定済み"
+  ],
+  "回听每位说话人的片段，选择哪位是你；其他说话人会自动标记为伙伴。": [
+    "Listen to each speaker, then choose your voice. Everyone else will be labeled as the other participant.",
+    "各話者の音声を聞いて自分の声を選んでください。他の話者は相手として設定されます。"
+  ],
+  "说话人 {0} 是你，其他说话人是伙伴。": [
+    "Speaker {0} is you. Everyone else is labeled as the other participant.",
+    "話者{0}があなたです。他の話者は相手として設定されています。"
+  ],
+  "开始标记": [
+    "Start labeling",
+    "設定を始める"
+  ],
+  "更改标记": [
+    "Change labels",
+    "設定を変更"
+  ],
+  "选择你的声音": [
+    "Choose your voice",
+    "自分の声を選択"
+  ],
+  "先回听片段，再把你的声音标记为“我”。其余说话人会自动标记为伙伴。": [
+    "Listen to the samples, then label your voice as Me. Everyone else will be labeled as the other participant.",
+    "音声を聞いて、自分の声を「自分」として設定してください。他の話者は相手として設定されます。"
+  ],
+  "标记为我": [
+    "Label as me",
+    "自分として設定"
+  ],
+  "已标记为我": [
+    "Labeled as me",
+    "自分として設定済み"
+  ],
+  "修改该话轮的说话人": [
+    "Change this turn's speaker",
+    "この発言の話者を変更"
+  ],
+  "说话人": [
+    "Speaker",
+    "話者"
+  ],
+  "编辑这句话": [
+    "Edit this turn",
+    "この発言を編集"
+  ],
+  "取消": [
+    "Cancel",
+    "キャンセル"
+  ],
+  "保存": [
+    "Save",
+    "保存"
+  ],
+  "没有匹配的内容": [
+    "No matches",
+    "一致する内容がありません"
+  ],
+  "清除搜索": [
+    "Clear search",
+    "検索をクリア"
+  ],
+  "转写未完成": [
+    "Transcription incomplete",
+    "文字起こしは未完了です"
+  ],
+  "没有识别到文字": [
+    "No speech recognized",
+    "文字を認識できませんでした"
+  ],
+  "开始转写这段录音": [
+    "Transcribe this recording",
+    "この録音を文字起こしする"
+  ],
+  "完成后，对话文字会显示在这里。": [
+    "The transcript will appear here.",
+    "完了するとここに会話文が表示されます。"
+  ],
+  "先试听录音，确认能听清人声。": [
+    "Play the recording and check that voices are audible.",
+    "録音を聞き、人の声が聞こえるか確認してください。"
+  ],
+  "正在提交…": [
+    "Submitting…",
+    "送信中…"
+  ],
+  "开始转写": [
+    "Transcribe",
+    "文字起こしを開始"
+  ],
+  "分析来源与说明": [
+    "Sources and details",
+    "分析の出典と説明"
+  ],
+  "当前内容是明确标注的演示数据，不来自你的录音。": [
+    "This is labeled demo data, not your recording.",
+    "これはデモデータで、あなたの録音ではありません。"
+  ],
+  "文字、时间戳和说话人信息来自本次原始录音。": [
+    "Text, timestamps and speakers come from this recording.",
+    "文字、時刻、話者はこの録音に基づいています。"
+  ],
+  "去练习": [
+    "Practice",
+    "練習する"
+  ],
+  "完成个人复盘": [
+    "Personalize your review",
+    "自分の振り返りを完成させる"
+  ],
+  "哪位说话人是你？": [
+    "Which speaker are you?",
+    "あなたはどの話者ですか？"
+  ],
+  "稍后确认": [
+    "Not now",
+    "後で確認"
+  ],
+  "系统只区分声音，不知道真实身份。选择前可点击话轮回听。": [
+    "Only voices are separated, not identities. Listen before selecting.",
+    "声を区別するだけで、人物は特定しません。選択前に音声を確認してください。"
+  ],
+  "我是说话人": [
+    "I am speaker",
+    "私は話者"
+  ],
+  "暂无可用片段": [
+    "No clip available",
+    "利用できる音声がありません"
+  ],
+  "你": [
+    "You",
+    "あなた"
+  ],
+  "伙伴": [
+    "Partner",
+    "相手"
+  ],
+  "待确认": [
+    "Unconfirmed",
+    "未確認"
+  ],
+  "会议": [
+    "Meeting",
+    "会議"
+  ],
+  "服务场景": [
+    "Service encounter",
+    "接客"
+  ],
+  "其他场景": [
+    "Other",
+    "その他"
+  ],
+  "操作引导": [
+    "Getting started",
+    "使い方ガイド"
+  ],
+  "引导完成": [
+    "You're ready",
+    "ガイド完了"
+  ],
+  "录一段": [
+    "Record",
+    "録音"
+  ],
+  "看复盘": [
+    "Review",
+    "振り返り"
+  ],
+  "练一次": [
+    "Practice",
+    "練習"
+  ],
+  "结束引导": [
+    "End guide",
+    "ガイドを終了"
+  ],
+  "跳过引导": [
+    "Skip guide",
+    "ガイドをスキップ"
+  ],
+  "跳过": [
+    "Skip",
+    "スキップ"
+  ],
+  "上一步": [
+    "Back",
+    "前へ"
+  ],
+  "完成引导": [
+    "Finish",
+    "完了"
+  ],
+  "下一步": [
+    "Next",
+    "次へ"
+  ],
+  "随时回来继续练习。": [
+    "Come back anytime to practice.",
+    "いつでも戻って練習できます。"
+  ],
+  "点「开始录音」，记录一段对话。": [
+    "Tap Record a conversation to begin.",
+    "「録音する」を押して会話を記録しましょう。"
+  ],
+  "确认参与者同意后录音，说完点「结束」。": [
+    "Get everyone's consent, record, then tap Stop.",
+    "全員の同意を得て録音し、話し終えたら「終了」を押します。"
+  ],
+  "授权将录音发送给千问，生成文字。": [
+    "Allow sending audio to Qwen for transcription.",
+    "録音をQwenに送信して文字起こしすることを許可します。"
+  ],
+  "核对": [
+    "Check",
+    "確認"
+  ],
+  "点时间戳回听，点铅笔改字。": [
+    "Tap a timestamp to listen, or the pencil to edit.",
+    "時刻を押して聞き直し、鉛筆を押して修正します。"
+  ],
+  "用学习语言回答，提交后查看反馈。": [
+    "Answer in your learning language, then submit for feedback.",
+    "学習言語で回答し、送信してフィードバックを見ましょう。"
+  ],
+  "打开一条记录，查看转写。": [
+    "Open a conversation to read its transcript.",
+    "記録を開いて会話文を確認します。"
+  ],
+  "点「提交回答」查看反馈。": [
+    "Tap Submit answer for feedback.",
+    "「回答を送信」を押してフィードバックを確認します。"
+  ],
+  "正在转写": [
+    "Transcribing",
+    "文字起こし中"
+  ],
+  "可以先离开，稍后从历史查看。": [
+    "You can leave and return from History later.",
+    "ページを離れて、後で履歴から確認できます。"
+  ],
+  "转写失败": [
+    "Transcription failed",
+    "文字起こし失敗"
+  ],
+  "查看错误提示，处理后重试。": [
+    "Check the error, then try again.",
+    "エラーを確認し、対処してから再試行してください。"
+  ],
+  "上传录音后，点「开始转写」。": [
+    "Upload the recording, then tap Transcribe.",
+    "録音をアップロードして「文字起こしを開始」を押します。"
+  ],
+  "点「转写」查看对话文字。": [
+    "Open Transcript to read the conversation.",
+    "「文字起こし」で会話文を確認します。"
+  ],
+  "准备录音": [
+    "Ready to record",
+    "録音の準備"
+  ],
+  "点「开始录音」，允许麦克风权限。": [
+    "Tap Record and allow microphone access.",
+    "録音ボタンを押してマイクを許可します。"
+  ],
+  "取得参与者同意后，勾选录音授权。": [
+    "Get everyone's consent, then check the permission box.",
+    "参加者の同意を得てから許可欄にチェックを入れます。"
+  ],
+  "说完点「结束」，自动保存录音。": [
+    "Tap Stop when finished. Audio saves automatically.",
+    "話し終えたら「終了」を押すと自動保存します。"
+  ],
+  "点「开始分析」生成转写。": [
+    "Tap Start analysis to transcribe.",
+    "「分析を開始」を押して文字起こしします。"
+  ],
+  "勾选授权，将录音发送给千问转写。": [
+    "Check permission to send audio to Qwen.",
+    "Qwenへの送信を許可してください。"
+  ],
+  "正在处理": [
+    "Processing",
+    "処理中"
+  ],
+  "稍等片刻，无需重复点击。": [
+    "Please wait; no need to tap again.",
+    "少しお待ちください。繰り返し押す必要はありません。"
+  ],
+  "上传失败": [
+    "Upload failed",
+    "アップロード失敗"
+  ],
+  "点「重试上传」，录音仍在本机。": [
+    "Tap Retry upload. Audio remains on your device.",
+    "「アップロードを再試行」を押します。録音は端末に残っています。"
+  ],
+  "保存录音": [
+    "Save recording",
+    "録音を保存"
+  ],
+  "点「重试保存」，再离开页面。": [
+    "Tap Retry saving before leaving.",
+    "ページを離れる前に「保存を再試行」を押してください。"
+  ],
+  "麦克风授权": [
+    "Microphone permission",
+    "マイクの許可"
+  ],
+  "在浏览器权限提示中选择「允许」。": [
+    "Choose Allow in your browser's permission prompt.",
+    "ブラウザの確認画面で「許可」を選びます。"
+  ],
+  "检查提示": [
+    "Check the notice",
+    "表示を確認"
+  ],
+  "录音已保留，处理提示后再继续。": [
+    "Audio is retained. Follow the notice to continue.",
+    "録音は残っています。表示内容を確認してから続けてください。"
+  ],
+  "录音保存后，可以在记录中开始转写。": [
+    "After saving, open the recording to transcribe it.",
+    "保存後、記録を開いて文字起こしできます。"
+  ],
+  "打开历史记录，即可回听和修改文字。": [
+    "Open History to listen and edit the transcript.",
+    "履歴から聞き直したり会話文を修正したりできます。"
+  ],
+  "已保存": [
+    "Saved",
+    "保存済み"
+  ],
+  "正在分析": [
+    "Analyzing",
+    "分析中"
+  ],
+  "分析完成": [
+    "Ready",
+    "分析完了"
+  ],
+  "需要重试": [
+    "Retry needed",
+    "再試行が必要"
+  ],
+  "正在确认登录状态…": [
+    "Checking sign-in…",
+    "ログインを確認中…"
+  ],
+  "正在加载你的数据…": [
+    "Loading your data…",
+    "データを読み込み中…"
+  ],
+  "创建账号": [
+    "Create account",
+    "アカウント作成"
+  ],
+  "欢迎回来": [
+    "Welcome back",
+    "おかえりなさい"
+  ],
+  "记录并复盘真实对话": [
+    "Record and review real conversations.",
+    "実際の会話を記録して振り返る"
+  ],
+  "显示名称": [
+    "Display name",
+    "表示名"
+  ],
+  "邮箱": [
+    "Email",
+    "メールアドレス"
+  ],
+  "密码": [
+    "Password",
+    "パスワード"
+  ],
+  "至少 12 个字符": [
+    "At least 12 characters",
+    "12文字以上"
+  ],
+  "正在处理…": [
+    "Processing…",
+    "処理中…"
+  ],
+  "登录": [
+    "Sign in",
+    "ログイン"
+  ],
+  "使用": [
+    "Use",
+    "使用"
+  ],
+  "已经有账号？": [
+    "Already have an account?",
+    "アカウントをお持ちですか？"
+  ],
+  "还没有账号？": [
+    "New here?",
+    "アカウントをお持ちでない方"
+  ],
+  "直接登录": [
+    "Sign in",
+    "ログイン"
+  ],
+  "忘记密码": [
+    "Forgot password",
+    "パスワードを忘れた方"
+  ],
+  "找回密码": [
+    "Reset password",
+    "パスワードの再設定"
+  ],
+  "设置新密码": [
+    "Set a new password",
+    "新しいパスワードを設定"
+  ],
+  "输入注册邮箱以继续": [
+    "Enter your account email.",
+    "登録メールアドレスを入力してください。"
+  ],
+  "新密码至少需要 12 个字符": [
+    "Use at least 12 characters.",
+    "12文字以上にしてください。"
+  ],
+  "新密码": [
+    "New password",
+    "新しいパスワード"
+  ],
+  "确认": [
+    "Confirm",
+    "確認"
+  ],
+  "返回登录": [
+    "Back to sign in",
+    "ログインへ戻る"
+  ],
+  "操作失败，请稍后重试。": [
+    "Something went wrong. Try again later.",
+    "操作に失敗しました。再試行してください。"
+  ],
+  "操作失败。": [
+    "Something went wrong.",
+    "操作に失敗しました。"
+  ],
+  "隐私与数据": [
+    "Privacy and data",
+    "プライバシーとデータ"
+  ],
+  "管理你的内容": [
+    "Manage your content",
+    "自分のデータを管理"
+  ],
+  "你的内容由你控制": [
+    "Your data, your control",
+    "データは自分で管理できます"
+  ],
+  "录音保存在私有空间，只有获得当次授权后才会用于分析。": [
+    "Recordings are private and analyzed only with your permission.",
+    "録音は非公開で保存され、その都度許可した場合のみ分析します。"
+  ],
+  "查看保存位置与服务商详情": [
+    "Storage and service details",
+    "保存先とサービスの詳細"
+  ],
+  "导出我的数据": [
+    "Export my data",
+    "データをエクスポート"
+  ],
+  "危险操作": [
+    "Destructive actions",
+    "取り消せない操作"
+  ],
+  "删除全部内容": [
+    "Delete all content",
+    "すべての内容を削除"
+  ],
+  "永久删除账号": [
+    "Delete account permanently",
+    "アカウントを完全に削除"
+  ],
+  "实时麦克风音量": [
+    "Live microphone level",
+    "マイクのリアルタイム音量"
+  ],
+  "未找到这个互动时刻": [
+    "Moment not found",
+    "この場面は見つかりません"
+  ],
+  "返回首页": [
+    "Back home",
+    "ホームへ"
+  ],
+  "把话题继续展开": [
+    "Develop the topic",
+    "話題を広げる"
+  ],
+  "让追问衔接得更自然": [
+    "Ask a natural follow-up",
+    "自然に質問を続ける"
+  ],
+  "为对方留下回应空间": [
+    "Make room for a response",
+    "相手が応じる余地を作る"
+  ],
+  "把需要澄清的地方说清楚": [
+    "Ask for clarification",
+    "不明な点を確認する"
+  ],
+  "互动时刻": [
+    "Conversation moment",
+    "会話の場面"
+  ],
+  "播放原声片段": [
+    "Play original clip",
+    "元の音声を再生"
+  ],
+  "听原声": [
+    "Listen",
+    "音声を聞く"
+  ],
+  "发生了什么": [
+    "What happened",
+    "何が起きたか"
+  ],
+  "可以这样说": [
+    "Try saying",
+    "こんな言い方もできます"
+  ],
+  "查看相关话轮与分析说明": [
+    "Evidence and analysis",
+    "根拠の発言と分析"
+  ],
+  "当前为演示分析。": [
+    "This is demo analysis.",
+    "これはデモ分析です。"
+  ],
+  "本提示由 AI 基于证据话轮生成。": [
+    "AI suggestion based on the cited turns.",
+    "根拠の発言に基づいたAIの提案です。"
+  ],
+  "本提示来自可解释规则。": [
+    "This suggestion uses transparent rules.",
+    "説明可能なルールに基づいた提案です。"
+  ],
+  "话题延续": [
+    "Topic development",
+    "話題を広げる"
+  ],
+  "一个继续展开话题的机会": [
+    "A chance to expand the topic",
+    "話題を広げる機会"
+  ],
+  "主动追问": [
+    "Follow-up",
+    "追加の質問"
+  ],
+  "你把交流机会交还给了对方": [
+    "You invited your partner to speak",
+    "相手に発言の機会を渡しました"
+  ],
+  "话轮节奏": [
+    "Turn balance",
+    "発言のバランス"
+  ],
+  "一个邀请对方加入的节点": [
+    "A chance to invite a response",
+    "相手の参加を促す機会"
+  ],
+  "你主动维护了共同理解": [
+    "You checked your understanding",
+    "理解を確認しました"
+  ],
+  "演示": [
+    "Demo",
+    "デモ"
+  ],
+  "互动提示": [
+    "Conversation tip",
+    "会話のヒント"
+  ],
+  "原声证据 ·": [
+    "Audio evidence ·",
+    "根拠の音声 ·"
+  ],
+  "后端当前不可用，已导出浏览器中保存的数据。录音可在复盘页单独下载。": [
+    "Server unavailable. Browser data exported; download audio from each review.",
+    "サーバーに接続できません。ブラウザ内のデータを出力しました。録音は各振り返り画面で保存できます。"
+  ],
+  "数据导出已经开始。录音文件可在各对话复盘页单独下载。": [
+    "Export started. Download recordings from each review.",
+    "エクスポートを開始しました。録音は各振り返り画面から保存できます。"
+  ],
+  "导出失败，请重试。": [
+    "Export failed. Try again.",
+    "出力に失敗しました。再試行してください。"
+  ],
+  "确定删除全部真实会话、录音、练习和设置吗？此操作无法撤销。": [
+    "Delete all conversations, recordings, practices and settings? This cannot be undone.",
+    "会話、録音、練習、設定をすべて削除しますか？元に戻せません。"
+  ],
+  "全部会话、录音、练习、AI 内容和学习设置已经删除。": [
+    "All conversations, recordings, practices, AI content and settings deleted.",
+    "会話、録音、練習、AI生成内容、設定を削除しました。"
+  ],
+  "浏览器中的会话和录音已删除；后端当前不可用，恢复连接后还需再次执行删除。": [
+    "Browser data deleted. Server unavailable; repeat deletion once reconnected.",
+    "ブラウザ内のデータを削除しました。サーバー復旧後、再度削除してください。"
+  ],
+  "清除失败，请重试。": [
+    "Couldn't clear data. Try again.",
+    "削除に失敗しました。再試行してください。"
+  ],
+  "删除账号会永久移除账号及全部内容。请输入当前密码确认：": [
+    "This permanently deletes your account and content. Enter your current password:",
+    "アカウントと全内容を完全に削除します。現在のパスワードを入力してください："
+  ],
+  "最后确认：永久删除账号且无法撤销？": [
+    "Permanently delete your account? This cannot be undone.",
+    "アカウントを完全に削除しますか？元に戻せません。"
+  ],
+  "账号删除失败。": [
+    "Couldn't delete account.",
+    "アカウントを削除できませんでした。"
+  ],
+  "录音先保存在当前浏览器，再同步到后端的私有对象存储。每次分析前可单独选择是否把该段录音临时发送给阿里云千问。DeepSeek 授权与语音授权彼此独立：只有在“我的”页面主动开启后，经过基础脱敏的转写文字才会发送给 DeepSeek，原始录音不会发送给 DeepSeek。": [
+    "Audio is saved in this browser, then synced to private server storage. Each analysis requires permission to send audio to Alibaba Cloud Qwen. DeepSeek has separate consent in Profile: only transcripts with basic redaction are sent, never recordings.",
+    "録音はブラウザに保存後、サーバーの非公開ストレージへ同期します。Qwenへの音声送信は分析ごとに許可が必要です。DeepSeekは別途マイページで許可が必要で、基本的な匿名化をした会話文のみを送り、録音は送りません。"
+  ],
+  "语音分析失败，可重新开始分析。": [
+    "Analysis failed. You can try again.",
+    "音声分析に失敗しました。再試行できます。"
+  ],
+  "无法连接分析服务。检查网络后可以重新开始分析。": [
+    "Cannot connect to analysis. Check your network and retry.",
+    "分析サービスに接続できません。ネットワークを確認して再試行してください。"
+  ],
+  "未找到这段对话": [
+    "Conversation not found",
+    "会話が見つかりません"
+  ],
+  "浏览器无法播放该片段，请使用上方播放器重试。": [
+    "Couldn't play this clip. Try the main audio player.",
+    "この部分を再生できません。上のプレーヤーをお試しください。"
+  ],
+  "无法保存说话人确认，请重试。": [
+    "Couldn't save speaker identity. Try again.",
+    "話者の確認を保存できませんでした。再試行してください。"
+  ],
+  "输入新的对话标题": [
+    "Enter a new conversation title",
+    "新しいタイトルを入力"
+  ],
+  "重命名失败。": [
+    "Couldn't rename.",
+    "名前を変更できませんでした。"
+  ],
+  "重新分析": [
+    "Analyze again",
+    "再分析"
+  ],
+  "重新分析失败。": [
+    "Couldn't restart analysis.",
+    "再分析できませんでした。"
+  ],
+  "本机找不到可同步的录音文件。": [
+    "No local audio file to sync.",
+    "同期できる録音ファイルが端末にありません。"
+  ],
+  "录音同步失败，请重试。": [
+    "Audio sync failed. Try again.",
+    "録音の同期に失敗しました。再試行してください。"
+  ],
+  "转写修改保存失败。": [
+    "Couldn't save transcript edits.",
+    "文字起こしの変更を保存できませんでした。"
+  ],
+  "说话人修改保存失败。": [
+    "Couldn't save speaker changes.",
+    "話者の変更を保存できませんでした。"
+  ],
+  "无法生成发送预览。": [
+    "Couldn't generate a preview.",
+    "プレビューを生成できませんでした。"
+  ],
+  "AI 复盘生成失败，本地规则结果仍然可用。": [
+    "AI review failed. Local feedback is still available.",
+    "AI分析に失敗しました。ローカル分析は引き続き利用できます。"
+  ],
+  "AI 练习生成失败。": [
+    "Couldn't generate AI practice.",
+    "AI練習を生成できませんでした。"
+  ],
+  "AI 任务执行失败": [
+    "AI task failed",
+    "AI処理に失敗しました"
+  ],
+  "AI 任务等待超时，请稍后刷新查看。": [
+    "AI task timed out. Refresh later to check.",
+    "AI処理がタイムアウトしました。後で再読み込みしてください。"
+  ],
+  "查看本周 {0} 次对话": [
+    "View {0} conversations this week",
+    "今週の会話{0}件を見る"
+  ],
+  "{0}会将这段录音发送给阿里云千问。是否继续？": [
+    "{0} will send this recording to Alibaba Cloud Qwen. Continue?",
+    "{0}では録音をAlibaba Cloud Qwenに送信します。続けますか？"
+  ],
+  "确定删除“{0}”及其录音吗？此操作无法撤销。": [
+    "Delete “{0}” and its audio? This cannot be undone.",
+    "「{0}」と録音を削除しますか？元に戻せません。"
+  ],
+  "说话人 {0}": [
+    "Speaker {0}",
+    "話者 {0}"
+  ],
+  "回听 {0} 的这句话": [
+    "Listen to this turn at {0}",
+    "{0}の発言を聞く"
+  ],
+  "修改 {0} 的转写": [
+    "Edit transcript at {0}",
+    "{0}の文字起こしを編集"
+  ],
+  "重点时刻已保存 · {0}": [
+    "Marked · {0}",
+    "マークしました · {0}"
+  ],
+  "{0} 至 {1}": [
+    "{0} to {1}",
+    "{0}〜{1}"
+  ],
+  "{0}月": [
+    "{0}",
+    "{0}月"
+  ],
+  "{0}，{1} 次学习": [
+    "{0}, {1} activities",
+    "{0}、{1}回の学習"
+  ],
+  "{0} · {1} 次学习": [
+    "{0} · {1} activities",
+    "{0} · {1}回の学習"
+  ],
+  "对话练习": [
+    "Conversation practice",
+    "会話練習"
+  ],
+  "取消等待播放": [
+    "Cancel pending playback",
+    "再生待ちをキャンセル"
+  ],
+  "对话": [
+    "Conversations",
+    "会話"
+  ],
+  "首页场景": [
+    "Home sections",
+    "ホームのセクション"
+  ],
+  "正在加载练习…": [
+    "Loading practice…",
+    "練習を読み込み中…"
+  ],
+  "暂无练习": [
+    "No exercises available",
+    "練習はまだありません"
+  ],
+  "编辑资料": [
+    "Edit profile",
+    "プロフィール編集"
+  ],
+  "编辑": [
+    "Edit",
+    "編集"
+  ],
+  "头像预览": [
+    "Avatar preview",
+    "プロフィール画像プレビュー"
+  ],
+  "更换头像": [
+    "Change photo",
+    "画像を変更"
+  ],
+  "恢复默认": [
+    "Reset photo",
+    "初期画像に戻す"
+  ],
+  "昵称": [
+    "Nickname",
+    "ニックネーム"
+  ],
+  "请选择 10MB 以内的 JPG、PNG 或 WebP 图片": [
+    "Choose a JPG, PNG or WebP under 10 MB",
+    "10MB以内のJPG、PNG、WebPを選んでください"
+  ],
+  "图片无法读取，请换一张": [
+    "Unable to read image. Choose another.",
+    "画像を読み込めません。別の画像を選んでください"
+  ],
+  "保存失败，请重试": [
+    "Could not save. Try again.",
+    "保存できませんでした。再試行してください。"
+  ],
+  "选择哪位说话人是你，获取个人建议。": [
+    "Select your speaker for personal feedback.",
+    "自分の話者を選ぶと、個別のアドバイスを受けられます。"
+  ],
+  "暂未区分说话人，仍可生成对话总结。": [
+    "Speakers are not identified yet. A conversation summary is still available.",
+    "話者はまだ区別されていませんが、会話の要約は作成できます。"
+  ],
+  "重点词汇": [
+    "Key vocabulary",
+    "重要な語彙"
+  ],
+  "同义替换": [
+    "Alternative wording",
+    "類義表現"
+  ],
+  "更自然的表达": [
+    "Natural expressions",
+    "より自然な表現"
+  ],
+  "原句": [
+    "Original",
+    "元の表現"
+  ],
+  "回听原句": [
+    "Listen to original",
+    "原音を聞く"
+  ],
+  "常用搭配": [
+    "Useful phrase",
+    "よく使う組み合わせ"
+  ],
+  "可以换成": [
+    "Alternative",
+    "言い換え"
+  ],
+  "自然说法": [
+    "Natural phrasing",
+    "自然な言い方"
+  ],
+  "例句": [
+    "Example",
+    "例文"
+  ],
+  "对话概况": [
+    "Conversation overview",
+    "会話の概要"
+  ],
+  "语言复盘": [
+    "Language review",
+    "言語の振り返り"
+  ],
+  "语言学习复盘": [
+    "Language learning review",
+    "言語学習の振り返り"
+  ],
+  "生成学习复盘": [
+    "Review language",
+    "学習ポイントを生成"
+  ],
+  "这是旧版复盘，重新生成可查看词汇和表达。": [
+    "Regenerate this older review to see vocabulary and expressions.",
+    "再生成すると語彙や表現の学習ポイントを表示できます。"
+  ],
+  "这段转写暂无足够的语言学习内容。": [
+    "This transcript has insufficient material for language learning.",
+    "この文字起こしには学習に十分な内容がありません。"
+  ],
+  "开启 AI 分析后，转写将自动生成语言复盘。": [
+    "Enable AI analysis to automatically review transcripts.",
+    "AI分析を有効にすると、文字起こしから自動で学習ポイントを生成します。"
+  ],
+  "前往设置": [
+    "Open settings",
+    "設定を開く"
+  ],
+  "复盘生成失败，请重试": [
+    "Review failed. Try again.",
+    "振り返りを生成できませんでした。再試行してください。"
+  ],
+  "用于 AI 复盘和出题，不改变普通练习库。": [
+    "Guides AI reviews and exercises, not the standard library.",
+    "AIの振り返りと出題に反映されます。通常の練習問題は変わりません。"
+  ],
+  "补充细节，让对话继续。": [
+    "Add details to keep the conversation going.",
+    "詳細を加えて会話を続けます。"
+  ],
+  "根据对方的话追问。": [
+    "Ask follow-up questions about what was said.",
+    "相手の話に合わせて質問します。"
+  ],
+  "接住话题，表达自己的观点。": [
+    "Join the discussion and share your perspective.",
+    "話題に加わり、自分の意見を伝えます。"
+  ],
+  "没听懂时，请对方解释或确认。": [
+    "Ask for clarification when you do not understand.",
+    "分からないときに説明や確認を求めます。"
+  ],
+  "我的声纹": [
+    "My voiceprint",
+    "自分の声紋"
+  ],
+  "已保存，仅在本地匹配本人声音。": [
+    "Saved for local voice matching.",
+    "保存済み。ローカルで声を照合します。"
+  ],
+  "在复盘中回听并确认自己的发言，再保存声纹。": [
+    "Confirm your voice in a review, then save your voiceprint.",
+    "振り返りで自分の発言を確認してから声紋を保存します。"
+  ],
+  "删除声纹": [
+    "Delete voiceprint",
+    "声紋を削除"
+  ],
+  "选择录音": [
+    "Choose recording",
+    "録音を選択"
+  ],
+  "用声纹匹配": [
+    "Match my voice",
+    "声紋で照合"
+  ],
+  "正在匹配…": [
+    "Matching…",
+    "照合中…"
+  ],
+  "声纹候选": [
+    "Voice match candidate",
+    "声紋の候補"
+  ],
+  "这是我": [
+    "This is me",
+    "これが私です"
+  ],
+  "回听": [
+    "Listen",
+    "聞く"
+  ],
+  "保存为我的声纹": [
+    "Save my voiceprint",
+    "自分の声紋として保存"
+  ],
+  "已标记你的发言": [
+    "Your speech is marked",
+    "自分の発言を設定済み"
+  ],
+  "声纹已保存": [
+    "Voiceprint saved",
+    "声紋を保存しました"
+  ],
+  "已找到相近声音，请回听确认。": [
+    "A similar voice was found. Listen to confirm.",
+    "近い声が見つかりました。聞いて確認してください。"
+  ],
+  "尚未录入声纹，请先手动确认并保存。": [
+    "Confirm and save your voiceprint first.",
+    "先に手動で確認して声紋を保存してください。"
+  ],
+  "无法可靠匹配，请手动确认。": [
+    "Match uncertain. Please confirm manually.",
+    "照合が不確実です。手動で確認してください。"
+  ],
+  "仅保存你已确认发言的声纹特征，用于今后识别本人声音。原始录音不会发给第三方，可在我的页面删除声纹。是否同意？": [
+    "Save voice features from your confirmed speech for future matching? No audio is sent to third parties. Delete the voiceprint anytime in Profile.",
+    "確認した発言の声紋を今後の照合用に保存しますか？音声は第三者に送信されません。マイページで削除できます。"
+  ],
+  "场景陪练": [
+    "Conversation tutor",
+    "場面別会話練習"
+  ],
+  "进入陪练": [
+    "Open tutor",
+    "会話練習を開く"
+  ],
+  "练口语": [
+    "Roleplay",
+    "会話練習"
+  ],
+  "问表达": [
+    "Ask about language",
+    "表現を質問"
+  ],
+  "陪练对话": [
+    "Tutor conversation",
+    "練習の会話"
+  ],
+  "陪练": [
+    "Tutor",
+    "練習相手"
+  ],
+  "朗读这条": [
+    "Read aloud",
+    "読み上げ"
+  ],
+  "处理中…": [
+    "Processing…",
+    "処理中…"
+  ],
+  "开始场景对话": [
+    "Start roleplay",
+    "会話を始める"
+  ],
+  "问单词或表达用法": [
+    "Ask about words or expressions",
+    "単語や表現について質問"
+  ],
+  "发送": [
+    "Send",
+    "送信"
+  ],
+  "录音中": [
+    "Recording",
+    "録音中"
+  ],
+  "播放语音": [
+    "Play audio",
+    "音声を再生"
+  ],
+  "暂停": [
+    "Pause",
+    "一時停止"
+  ],
+  "请还原这段对话的场景，扮演对方，先向我说一句话。": [
+    "Recreate this conversation scene and start as my conversation partner.",
+    "この会話の場面を再現して相手役として話しかけてください。"
+  ],
+  "语音回答会发送给千问转写为文字，文字随后发送给 DeepSeek 陪练。是否允许？": [
+    "Send voice replies to Qwen for transcription, then text to DeepSeek for tutoring?",
+    "音声をQwenで文字起こしし、そのテキストをDeepSeekの会話練習に送信しますか？"
+  ],
+  "陪练记录加载失败": [
+    "Could not load tutor history",
+    "練習履歴を読み込めませんでした"
+  ],
+  "发送失败，请重试": [
+    "Could not send. Try again.",
+    "送信できませんでした。再試行してください。"
+  ],
+  "导出失败，请重试": [
+    "Export failed. Try again.",
+    "エクスポートできませんでした。再試行してください。"
+  ],
+  "请先同步录音再导出": [
+    "Sync the recording before exporting",
+    "録音を同期してからエクスポートしてください"
+  ],
+  "导出 Word": [
+    "Export Word",
+    "Wordでエクスポート"
+  ],
+  "转写完成后即可开始场景陪练。": [
+    "Start roleplay once transcription is ready.",
+    "文字起こしが完了すると会話練習を始められます。"
+  ],
+  "正在加载陪练…": [
+    "Loading conversation…",
+    "会話を読み込み中…"
+  ],
+  "你可以找我练口语，或者一起学习语法和单词哟 (｡•̀ᴗ-)✧": [
+    "Practice speaking with me, or explore grammar and vocabulary together (｡•̀ᴗ-)✧",
+    "会話の練習も、文法や単語の勉強も、一緒にできるよ (｡•̀ᴗ-)✧"
+  ],
+  "发送消息": [
+    "Send a message",
+    "メッセージを送信"
+  ],
+  "发消息，或说点什么…": [
+    "Message or say something…",
+    "メッセージを入力するか、話しかけてね…"
+  ],
+  "正在回复…": [
+    "Replying…",
+    "返信中…"
+  ],
+  "日期格式": [
+    "Date format",
+    "日付形式"
+  ],
+  "跟随语言": [
+    "Language default",
+    "言語に合わせる"
+  ],
+  "中文日期": [
+    "Chinese date",
+    "中国語表記"
+  ],
+  "年/月/日": [
+    "Year/Month/Day",
+    "年/月/日"
+  ],
+  "日/月/年": [
+    "Day/Month/Year",
+    "日/月/年"
+  ],
+  "月/日/年": [
+    "Month/Day/Year",
+    "月/日/年"
+  ],
+  "年-月-日": [
+    "Year-Month-Day",
+    "年-月-日"
+  ],
+  "日期格式保存失败，请重试": [
+    "Could not save date format. Try again.",
+    "日付形式を保存できませんでした。再試行してください。"
+  ],
+  "参与者同意": [
+    "Participant consent",
+    "参加者の同意"
+  ],
+  "每次录音前，请确认已取得所有参与者同意。": [
+    "Before each recording, make sure all participants agree.",
+    "毎回録音する前に、参加者全員の同意を確認してください。"
+  ],
+  "表达建议": [
+    "Expression tips",
+    "表現のヒント"
+  ],
+  "分析依据": [
+    "Why this suggestion",
+    "提案の根拠"
+  ],
+  "麦克风设定": [
+    "Microphone settings",
+    "マイク設定"
+  ],
+  "录音设备": [
+    "Recording device",
+    "録音デバイス"
+  ],
+  "用于本设备上的录音、练习和场景陪练。": [
+    "Used for recordings, exercises and tutoring on this device.",
+    "このデバイスの録音・練習・会話練習に使用します。"
+  ],
+  "检测麦克风": [
+    "Check microphone",
+    "マイクを確認"
+  ],
+  "停止检测": [
+    "Stop checking",
+    "確認を停止"
+  ],
+  "等待麦克风权限…": [
+    "Waiting for microphone permission…",
+    "マイクの許可を待っています…"
+  ],
+  "已检测到声音": [
+    "Sound detected",
+    "音を検出しました"
+  ],
+  "请说句话；若音量条不动，请切换设备。": [
+    "Say something. If the meter stays still, choose another device.",
+    "話しかけてください。メーターが動かなければ別のデバイスを選んでください。"
+  ],
+  "检测结束，已收到声音。": [
+    "Check complete. Sound was detected.",
+    "確認完了。音を検出しました。"
+  ],
+  "未检测到明显声音，请换一个麦克风。": [
+    "No clear sound detected. Try another microphone.",
+    "音が十分に検出されません。別のマイクを選んでください。"
+  ],
+  "仅检测音量，不保存或上传声音；30 秒后自动停止。": [
+    "Checks volume only. No audio is saved or uploaded. Stops after 30 seconds.",
+    "音量のみ確認し、音声は保存・送信しません。30秒後に停止します。"
+  ],
+  "已选设备未连接": [
+    "Selected device disconnected",
+    "選択したデバイスが未接続"
+  ],
+  "所选麦克风不可用，请到个人中心重新选择设备。": [
+    "Selected microphone unavailable. Choose another in Profile.",
+    "選択したマイクが使えません。マイページで選び直してください。"
+  ],
+  "所选麦克风已断开，请重新选择。": [
+    "Microphone disconnected. Choose another.",
+    "マイクが切断されました。選び直してください。"
+  ],
+  "请允许浏览器访问麦克风。": [
+    "Allow microphone access in your browser.",
+    "ブラウザーのマイクアクセスを許可してください。"
+  ],
+  "麦克风不可用，请检查连接或选择其他设备。": [
+    "Microphone unavailable. Check the connection or select another device.",
+    "マイクが使えません。接続を確認するか別のデバイスを選んでください。"
+  ],
+  "无法读取麦克风列表，请检查浏览器权限。": [
+    "Cannot list microphones. Check browser permissions.",
+    "マイク一覧を取得できません。ブラウザーの権限を確認してください。"
+  ],
+  "学习偏好": [
+    "Learning preferences",
+    "学習の設定"
+  ],
+  "语言与日期": [
+    "Language & date",
+    "言語と日付"
+  ],
+  "录音设置": [
+    "Recording settings",
+    "録音の設定"
+  ],
+  "服务与帮助": [
+    "Services & help",
+    "サービスとヘルプ"
+  ],
+  "AI 分析已开启。": [
+    "AI analysis enabled.",
+    "AI分析を有効にしました。"
+  ],
+  "AI 分析已关闭。": [
+    "AI analysis disabled.",
+    "AI分析を無効にしました。"
+  ],
+  "收藏夹": [
+    "Favorites",
+    "お気に入り"
+  ],
+  "收藏对话": [
+    "Save conversation",
+    "会話をお気に入りに追加"
+  ],
+  "取消收藏": [
+    "Remove favorite",
+    "お気に入りを解除"
+  ],
+  "收藏未保存，请重试": [
+    "Could not save. Try again.",
+    "保存できませんでした。再試行してください。"
+  ],
+  "复盘筛选": [
+    "Review filter",
+    "振り返りの絞り込み"
+  ],
+  "还没有收藏，点击对话旁的书签即可添加": [
+    "No favorites yet. Tap a conversation’s bookmark to save it.",
+    "会話の横のブックマークを押して追加できます。"
+  ],
+  "练习方式": [
+    "Practice mode",
+    "練習モード"
+  ],
+  "文字练习": [
+    "Text practice",
+    "テキスト練習"
+  ],
+  "语音对话": [
+    "Voice conversation",
+    "音声会話"
+  ],
+  "语音将发送给千问转写，文字发送给 DeepSeek 陪练。是否开始？": [
+    "Audio is sent to Qwen for transcription and text to DeepSeek for practice. Start?",
+    "音声はQwenへ、文字はDeepSeekへ送信して練習します。開始しますか？"
+  ],
+  "说完自动发送，对方回复后继续说": [
+    "Finish speaking to send. Continue after the reply.",
+    "話し終えると自動送信。返答の後に続けて話せます。"
+  ],
+  "正在听你说…": [
+    "Listening…",
+    "聞いています…"
+  ],
+  "对方正在说话…": [
+    "Partner is speaking…",
+    "相手が話しています…"
+  ],
+  "结束对话": [
+    "End conversation",
+    "会話を終了"
+  ],
+  "说完了": [
+    "Send now",
+    "話し終わりました"
+  ],
+  "继续对话": [
+    "Continue conversation",
+    "会話を続ける"
+  ],
+  "开始语音对话": [
+    "Start voice conversation",
+    "音声会話を開始"
+  ],
+  "没有听到声音，请检查麦克风": [
+    "No sound detected. Check your microphone.",
+    "音声が検出されません。マイクを確認してください。"
+  ],
+  "语音对话中断，请重试": [
+    "Conversation interrupted. Try again.",
+    "会話が中断されました。再試行してください。"
+  ],
+  "语音播放失败，点击继续重试": [
+    "Playback failed. Tap Continue to retry.",
+    "再生できませんでした。続けるを押して再試行してください。"
+  ],
+  "请点击继续，允许播放语音": [
+    "Tap Continue to allow audio playback.",
+    "続けるを押して音声を再生してください。"
+  ],
+  "周记": [
+    "Weekly journal",
+    "週のノート"
+  ],
+  "上一周": [
+    "Previous week",
+    "前の週"
+  ],
+  "下一周": [
+    "Next week",
+    "次の週"
+  ],
+  "本周": [
+    "This week",
+    "今週"
+  ],
+  "单词": [
+    "Words",
+    "単語"
+  ],
+  "句子": [
+    "Sentences",
+    "例文"
+  ],
+  "添加单词": [
+    "Add word",
+    "単語を追加"
+  ],
+  "添加句子": [
+    "Add sentence",
+    "例文を追加"
+  ],
+  "释义（选填）": [
+    "Meaning (optional)",
+    "意味（任意）"
+  ],
+  "删除这条周记？": [
+    "Delete this entry?",
+    "この記録を削除しますか？"
+  ],
+  "周记加载失败": [
+    "Could not load journal",
+    "ノートを読み込めませんでした"
+  ],
+  "暂无记录": [
+    "No entries yet",
+    "まだ記録がありません"
+  ],
+  "正在整理…": [
+    "Compiling…",
+    "整理中…"
+  ],
+  "重新生成本周": [
+    "Regenerate this week",
+    "今週分を再生成"
+  ],
+  "生成本周周记": [
+    "Generate this week",
+    "今週のノートを生成"
+  ],
+  "选择复盘": [
+    "Choose reviews",
+    "振り返りを選択"
+  ],
+  "仅选本周": [
+    "This week only",
+    "今週のみ選択"
+  ],
+  "清空选择": [
+    "Clear selection",
+    "選択を解除"
+  ],
+  "生成周记（{0}）": [
+    "Generate ({0})",
+    "生成（{0}）"
+  ],
+  "来自 {0} 条复盘": [
+    "From {0} reviews",
+    "{0}件の振り返りから"
+  ],
+  "{0} 条尚无学习要点": [
+    "{0} have no learning points yet",
+    "{0}件には学習ポイントがありません"
+  ],
+  "查看来源复盘": [
+    "View source review",
+    "元の振り返りを見る"
+  ],
+  "来源": [
+    "Source",
+    "出典"
+  ],
+  "暂无学习要点": [
+    "No learning points yet",
+    "学習ポイントがありません"
+  ],
+  "从复盘中整理单词和句子": [
+    "Collect words and sentences from reviews",
+    "振り返りから単語と例文を整理"
+  ],
+  "本周还没有复盘记录": [
+    "No reviews this week",
+    "今週の振り返りはありません"
+  ],
+  "所选记录还没有语言学习复盘，请先在复盘详情中生成": [
+    "Generate language learning reviews in the selected conversations first.",
+    "選択した会話の詳細で学習の振り返りを先に生成してください。"
+  ],
+  "复盘助手": [
+    "Review assistant",
+    "振り返りアシスタント"
+  ],
+  "练口语 · 问表达": [
+    "Speaking & expression help",
+    "会話練習・表現の相談"
+  ],
+  "录音后开启": [
+    "Record a conversation to start",
+    "録音して始める"
+  ],
+  "选择场景": [
+    "Choose a scene",
+    "場面を選択"
+  ],
+  "返回场景选择会结束当前对话，继续吗？": [
+    "End this conversation and choose another scene?",
+    "この会話を終了して場面を選び直しますか？"
+  ],
+  "发消息，开始对话": [
+    "Send a message to start",
+    "メッセージを送って始める"
+  ],
+  "切换键盘": [
+    "Use keyboard",
+    "キーボードに切り替え"
+  ],
+  "语音输入": [
+    "Voice input",
+    "音声入力"
+  ],
+  "点击说话": [
+    "Tap to speak",
+    "タップして話す"
+  ],
+  "点击发送": [
+    "Tap to send",
+    "タップして送信"
+  ],
+  "正在打开麦克风…": [
+    "Opening microphone…",
+    "マイクを準備中…"
+  ],
+  "重新发送": [
+    "Resend",
+    "再送信"
+  ],
+  "停止播放": [
+    "Stop playback",
+    "再生を停止"
+  ],
+  "语音播放失败，可点击消息重新播放": [
+    "Audio could not play. Tap the message to retry.",
+    "再生できません。メッセージを押して再試行してください。"
+  ],
+  "录音豆": [
+    "Recorder",
+    "録音デバイス"
+  ],
+  "直连尚未接入": [
+    "Direct connection unavailable",
+    "直接接続は未対応"
+  ],
+  "导入设备导出的录音，继续转写与复盘。": [
+    "Import exported audio for transcription and review.",
+    "書き出した音声を取り込み、文字起こしと振り返りへ。"
+  ],
+  "导入录音": [
+    "Import recording",
+    "録音を取り込む"
+  ],
+  "正在导入…": [
+    "Importing…",
+    "取り込み中…"
+  ],
+  "先保存到本机，分析时再上传。": [
+    "Saved locally first; uploaded when you analyze.",
+    "まず端末に保存し、分析時にアップロードします。"
+  ],
+  "请选择 100 MB 以内的有效录音文件": [
+    "Choose a valid recording under 100 MB.",
+    "100 MB以下の有効な録音を選択してください。"
+  ],
+  "无法读取录音时长，请导出为 MP3 或 WAV 后重试": [
+    "Export as MP3 or WAV and try again.",
+    "MP3またはWAVで書き出して再試行してください。"
+  ],
+  "无法读取录音，请换一个文件": [
+    "Could not read audio. Choose another file.",
+    "音声を読み込めません。別のファイルを選択してください。"
+  ],
+  "单条录音不能超过 4 小时": [
+    "Recordings must be under four hours.",
+    "録音は4時間以内にしてください。"
+  ],
+  "无法连接服务，请检查网络或刷新页面后重试。": [
+    "Cannot connect. Check your network or reload the page.",
+    "接続できません。ネットワークを確認するか再読み込みしてください。"
+  ],
+  "已连接": [
+    "Connected",
+    "接続済み"
+  ],
+  "未连接": [
+    "Disconnected",
+    "未接続"
+  ],
+  "连接录音豆": [
+    "Connect recorder",
+    "録音デバイスに接続"
+  ],
+  "正在连接…": [
+    "Connecting…",
+    "接続中…"
+  ],
+  "充电盒": [
+    "Case",
+    "充電ケース"
+  ],
+  "断开连接": [
+    "Disconnect",
+    "切断"
+  ],
+  "绑定设备": [
+    "Bind device",
+    "デバイスを登録"
+  ],
+  "设备信息": [
+    "Device information",
+    "デバイス情報"
+  ],
+  "设备录音": [
+    "Device recordings",
+    "デバイスの録音"
+  ],
+  "设备上暂无录音": [
+    "No recordings on device",
+    "デバイスに録音がありません"
+  ],
+  "导入": [
+    "Import",
+    "取り込む"
+  ],
+  "导入录音文件": [
+    "Import audio file",
+    "録音ファイルの取り込み"
+  ],
+  "可用": [
+    "available",
+    "空き容量"
+  ],
+  "刷新": [
+    "Refresh",
+    "更新"
+  ],
+  "暂停录音": [
+    "Pause recording",
+    "録音を一時停止"
+  ],
+  "如设备提示，请按录音豆按钮确认。": [
+    "If prompted, press the recorder button to confirm.",
+    "デバイスの案内に従ってボタンで確認してください。"
+  ],
+  "录音中，暂停后可导入。": [
+    "Pause recording before importing.",
+    "録音を一時停止してから取り込んでください。"
+  ],
+  "唤醒录音豆并靠近设备，关闭其他 App 的连接。": [
+    "Wake the recorder, keep it nearby, and disconnect other apps.",
+    "デバイスを起動して近づけ、他のアプリとの接続を解除してください。"
+  ],
+  "当前浏览器不支持蓝牙直连，请用 Chrome 或 Edge 打开此网址。": [
+    "Bluetooth is unavailable here. Open this address in Chrome or Edge.",
+    "このブラウザーはBluetoothに対応していません。ChromeまたはEdgeで開いてください。"
+  ],
+  "未选择设备，或附近没有录音豆": [
+    "No recorder selected or found nearby.",
+    "デバイスが選択されていないか、近くにありません。"
+  ]
+}

@@ -1,0 +1,205 @@
+name: beyond-words
+
+x-backend: &backend
+  image: ${BEYOND_WORDS_API_IMAGE:-beyond-words-api:local}
+  build:
+    context: .
+    dockerfile: backend/Dockerfile
+  restart: unless-stopped
+  env_file:
+    - path: .env
+      required: false
+  environment:
+    BEYOND_WORDS_ENV: production
+    BEYOND_WORDS_DATABASE_URL: postgresql+psycopg://beyond_words:${POSTGRES_PASSWORD}@postgres:5432/beyond_words
+    BEYOND_WORDS_REDIS_URL: redis://redis:6379/0
+    BEYOND_WORDS_CELERY_EAGER: "false"
+    BEYOND_WORDS_AUTO_CREATE_SCHEMA: "false"
+    BEYOND_WORDS_SESSION_COOKIE_SECURE: "true"
+    BEYOND_WORDS_FRONTEND_URL: https://${APP_DOMAIN:-localhost}
+    BEYOND_WORDS_CORS_ORIGINS: https://${APP_DOMAIN:-localhost}
+    BEYOND_WORDS_STORAGE_BACKEND: minio
+    BEYOND_WORDS_MINIO_ENDPOINT: minio:9000
+    BEYOND_WORDS_MINIO_ACCESS_KEY: ${MINIO_ROOT_USER}
+    BEYOND_WORDS_MINIO_SECRET_KEY: ${MINIO_ROOT_PASSWORD}
+    BEYOND_WORDS_DEEPSEEK_API_KEY_FILE: /run/secrets/deepseek_api_key
+    BEYOND_WORDS_SPEECH_BACKEND: qwen
+    BEYOND_WORDS_QWEN_API_KEY_FILE: /run/secrets/qwen_api_key
+    BEYOND_WORDS_QWEN_WORKSPACE_ID: ${BEYOND_WORDS_QWEN_WORKSPACE_ID:-}
+    BEYOND_WORDS_QWEN_BASE_URL: ${BEYOND_WORDS_QWEN_BASE_URL:-https://dashscope.aliyuncs.com/api/v1}
+    BEYOND_WORDS_QWEN_FILE_MODEL: ${BEYOND_WORDS_QWEN_FILE_MODEL:-qwen-audio-3.1-asr-flash-filetrans}
+    BEYOND_WORDS_QWEN_SHORT_MODEL: ${BEYOND_WORDS_QWEN_SHORT_MODEL:-qwen-audio-3.1-asr-flash}
+    BEYOND_WORDS_QWEN_TTS_MODEL: ${BEYOND_WORDS_QWEN_TTS_MODEL:-qwen3-tts-flash}
+    BEYOND_WORDS_QWEN_TTS_VOICE: ${BEYOND_WORDS_QWEN_TTS_VOICE:-Cherry}
+    BEYOND_WORDS_QWEN_TTS_GENERATIONS_PER_DAY: ${BEYOND_WORDS_QWEN_TTS_GENERATIONS_PER_DAY:-30}
+    BEYOND_WORDS_QWEN_AUDIO_URL_MODE: ${BEYOND_WORDS_QWEN_AUDIO_URL_MODE:-temporary}
+    BEYOND_WORDS_QWEN_MAX_RETRIES: ${BEYOND_WORDS_QWEN_MAX_RETRIES:-3}
+    BEYOND_WORDS_QWEN_RETRY_BASE_SECONDS: ${BEYOND_WORDS_QWEN_RETRY_BASE_SECONDS:-1}
+    OTEL_EXPORTER_OTLP_ENDPOINT: http://otel-collector:4317
+    OTEL_SERVICE_NAME: beyond-words-api
+    BEYOND_WORDS_GRAFANA_URL: ${BEYOND_WORDS_GRAFANA_URL:-}
+  secrets: [deepseek_api_key, qwen_api_key]
+  depends_on:
+    postgres: { condition: service_healthy }
+    redis: { condition: service_healthy }
+    minio: { condition: service_healthy }
+
+services:
+  gateway:
+    image: caddy:2.9-alpine
+    restart: unless-stopped
+    environment:
+      APP_DOMAIN: ${APP_DOMAIN:-localhost}
+    ports: ["80:80", "443:443"]
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      web: { condition: service_healthy }
+      api: { condition: service_healthy }
+
+  web:
+    image: ${BEYOND_WORDS_WEB_IMAGE:-beyond-words-web:local}
+    build: .
+    restart: unless-stopped
+    expose: ["8080"]
+
+  api:
+    <<: *backend
+    command: ["sh", "-c", "alembic upgrade head && uvicorn backend.app.main:app --host 0.0.0.0 --port 8000 --workers 2"]
+    expose: ["8000"]
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8000/api/v1/health/ready"]
+      interval: 20s
+      timeout: 5s
+      retries: 8
+
+  worker:
+    <<: *backend
+    command: ["sh", "-c", "OTEL_SERVICE_NAME=beyond-words-worker-default exec celery -A backend.app.workers.celery_app:celery_app worker --loglevel=INFO --queues=default --concurrency=2"]
+
+  worker-qwen:
+    <<: *backend
+    command: ["sh", "-c", "OTEL_SERVICE_NAME=beyond-words-worker-speech exec celery -A backend.app.workers.celery_app:celery_app worker --loglevel=INFO --queues=speech --concurrency=2"]
+
+  flower:
+    <<: *backend
+    command: ["celery", "-A", "backend.app.workers.celery_app:celery_app", "flower", "--port=5555", "--persistent=False"]
+    expose: ["5555"]
+
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: beyond_words
+      POSTGRES_USER: beyond_words
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes: [postgres_data:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U beyond_words -d beyond_words"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7.4-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes", "--maxmemory-policy", "noeviction"]
+    volumes: [redis_data:/data]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+
+  minio:
+    # The original minio/minio registry was retired in 2026. Silo is the
+    # actively maintained wire-compatible fork and keeps the S3/MinIO API.
+    image: pgsty/silo:RELEASE.2026-08-06T00-00-00Z
+    restart: unless-stopped
+    command: ["server", "/data", "--console-address", ":9001"]
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+    volumes: [minio_data:/data]
+    expose: ["9000", "9001"]
+    healthcheck:
+      test: ["CMD", "silo", "healthcheck", "live"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  otel-collector:
+    image: otel/opentelemetry-collector-contrib:0.116.1
+    restart: unless-stopped
+    command: ["--config=/etc/otelcol/config.yaml"]
+    volumes:
+      - ./deploy/otel-collector.yml:/etc/otelcol/config.yaml:ro
+    expose: ["4317", "8889"]
+
+  prometheus:
+    image: prom/prometheus:v3.2.1
+    restart: unless-stopped
+    command: ["--config.file=/etc/prometheus/prometheus.yml", "--storage.tsdb.path=/prometheus", "--storage.tsdb.retention.time=15d"]
+    volumes:
+      - ./deploy/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    expose: ["9090"]
+    depends_on:
+      - otel-collector
+      - flower
+      - postgres-exporter
+      - redis-exporter
+
+  postgres-exporter:
+    image: prometheuscommunity/postgres-exporter:v0.17.1
+    restart: unless-stopped
+    environment:
+      DATA_SOURCE_NAME: postgresql://beyond_words:${POSTGRES_PASSWORD}@postgres:5432/beyond_words?sslmode=disable
+    expose: ["9187"]
+    depends_on:
+      postgres: { condition: service_healthy }
+
+  redis-exporter:
+    image: oliver006/redis_exporter:v1.69.0
+    restart: unless-stopped
+    environment:
+      REDIS_ADDR: redis://redis:6379
+    expose: ["9121"]
+    depends_on:
+      redis: { condition: service_healthy }
+
+  grafana:
+    image: grafana/grafana-oss:11.6.0
+    restart: unless-stopped
+    environment:
+      GF_SECURITY_ADMIN_USER: ${GRAFANA_ADMIN_USER:-admin}
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_ADMIN_PASSWORD:-beyond-words-local-admin}
+      GF_USERS_ALLOW_SIGN_UP: "false"
+      GF_AUTH_ANONYMOUS_ENABLED: "false"
+      GF_SECURITY_DISABLE_GRAVATAR: "true"
+      GF_PLUGINS_PREINSTALL_DISABLED: "true"
+      GF_PLUGINS_DISABLE_PLUGINS: grafana-lokiexplore-app
+    volumes:
+      - ./deploy/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./deploy/grafana/dashboards:/etc/grafana/dashboards:ro
+      - grafana_data:/var/lib/grafana
+    expose: ["3000"]
+    depends_on:
+      - prometheus
+
+secrets:
+  deepseek_api_key:
+    file: ./api-key/api-key.txt
+  qwen_api_key:
+    file: ./api-key/dashscope_api_key.txt
+
+volumes:
+  postgres_data:
+  redis_data:
+  minio_data:
+  caddy_data:
+  caddy_config:
+  prometheus_data:
+  grafana_data:
