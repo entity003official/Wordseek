@@ -1,0 +1,18 @@
+# 历史本地语音 Worker 参考配置，不属于默认部署。
+# 恢复前须按 ../README.zh-CN.md 将归档模块复制回 backend/app，
+# 并根据目标 CUDA 版本重新选择 PyTorch 镜像和依赖。
+services:
+  worker-local-speech:
+    build:
+      context: ../../..
+      dockerfile: archive/local-speech-provider/deploy/Dockerfile.speech
+    image: beyond-words-local-speech:archived
+    command:
+      - celery
+      - -A
+      - backend.app.workers.celery_app:celery_app
+      - worker
+      - --loglevel=INFO
+      - --queues=speech
+      - --concurrency=1
+    profiles: [local-speech-archive]

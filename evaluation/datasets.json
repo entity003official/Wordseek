@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "datasets": [
+    {
+      "id": "hcrc-maptask-q1ec1",
+      "name": "HCRC Map Task Corpus sample q1ec1",
+      "priority": "ready_dyadic_sample",
+      "language": "en-GB",
+      "conversation_type": "unscripted_two_person_cooperative_task",
+      "content": ["stereo_dialogue_audio", "turn_transcript", "speaker_roles"],
+      "access": "public_download",
+      "license": "CC-BY-4.0",
+      "official_url": "https://groups.inf.ed.ac.uk/maptask/",
+      "audio_url": "https://groups.inf.ed.ac.uk/maptask/signals/dialogues/q1ec1.mix.wav",
+      "transcript_url": "https://groups.inf.ed.ac.uk/maptask/transcripts/q1ec1.txt",
+      "intended_evaluation": ["two_speaker_asr", "turn_taking", "backchannels", "clarification", "topic_development"]
+    },
+    {
+      "id": "candor",
+      "name": "CANDOR Conversation Corpus",
+      "priority": "primary_dyadic",
+      "language": "en-US",
+      "conversation_type": "natural_two_person_video_call",
+      "content": ["raw_audio", "processed_audio", "transcripts", "turn_timing", "survey_metadata"],
+      "access": "registration_required",
+      "license_note": "Original distribution terms apply; do not redistribute corpus files from this repository.",
+      "official_url": "https://www.betterup.com/research/candor-research",
+      "request_url": "https://connect.betterup.io/candor-corpus",
+      "intended_evaluation": ["two_speaker_turn_taking", "backchannels", "topic_development", "conversation_summary"]
+    },
+    {
+      "id": "ami-es2002a",
+      "name": "AMI Meeting Corpus sample ES2002a",
+      "priority": "ready_sample",
+      "language": "en",
+      "conversation_type": "four_person_scenario_meeting",
+      "content": ["mixed_headset_audio", "word_timestamps", "speaker_labels", "dialog_acts"],
+      "access": "public_download",
+      "license": "CC-BY-4.0",
+      "official_url": "https://groups.inf.ed.ac.uk/ami/corpus/",
+      "audio_url": "https://groups.inf.ed.ac.uk/ami/AMICorpusMirror/amicorpus/ES2002a/audio/ES2002a.Mix-Headset.wav",
+      "annotations_url": "https://groups.inf.ed.ac.uk/ami/AMICorpusAnnotations/ami_public_manual_1.6.2.zip",
+      "annotation_mirror_url": "https://huggingface.co/datasets/ggfox00000/dia-AMICorpus-all/tree/main/ami_public_manual_1.6.2/words",
+      "expected_audio_bytes_approx": 41000000,
+      "intended_evaluation": ["wer", "speaker_diarization", "turn_boundaries", "overlap_handling"]
+    },
+    {
+      "id": "dipco",
+      "name": "DiPCo Dinner Party Corpus",
+      "priority": "acoustic_stress",
+      "language": "en",
+      "conversation_type": "natural_four_person_dinner_party",
+      "content": ["close_talk_audio", "far_field_array_audio", "human_transcripts", "speaker_labels"],
+      "access": "public_large_download",
+      "license": "CDLA-Permissive-1.0",
+      "official_url": "https://zenodo.org/records/8122551",
+      "download_bytes": 13400000000,
+      "intended_evaluation": ["noise_robustness", "far_field_asr", "overlap_handling", "speaker_diarization"]
+    },
+    {
+      "id": "chime6",
+      "name": "CHiME-6",
+      "priority": "reference_only",
+      "language": "en",
+      "conversation_type": "natural_four_person_dinner_party",
+      "access": "license_required",
+      "license_note": "Do not download or redistribute until the applicable CHiME-5/6 license is approved.",
+      "official_url": "https://chimechallenge.github.io/chime6/",
+      "intended_evaluation": ["far_field_asr", "speaker_diarization", "overlap_handling"]
+    }
+  ]
+}

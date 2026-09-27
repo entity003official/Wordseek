@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-09-26",
+  "runs": [
+    {
+      "dataset_id": "hcrc-maptask-q1ec1",
+      "model": "openai-whisper/tiny.en",
+      "engine": "openai-whisper",
+      "status": "archived_local_baseline",
+      "reference_words": 538,
+      "predicted_words": 517,
+      "word_edits": 135,
+      "wer": 0.2509,
+      "diarization": null,
+      "notes": "Official Map Task transcript has no turn timestamps, so this run measures whole-conversation WER only."
+    },
+    {
+      "dataset_id": "ami-es2002a",
+      "model": "openai-whisper/tiny.en",
+      "engine": "openai-whisper",
+      "status": "archived_local_baseline",
+      "reference_words": 2633,
+      "predicted_words": 2248,
+      "word_edits": 1093,
+      "wer": 0.4151,
+      "diarization": null,
+      "notes": "Archived pre-Qwen local run. No speaker diarization was configured for this historical baseline."
+    },
+    {
+      "dataset_id": "hcrc-maptask-q1ec1",
+      "model": "qwen-audio-3.1-asr-flash-filetrans",
+      "engine": "qwen",
+      "reference_words": 538,
+      "predicted_words": 470,
+      "word_edits": 105,
+      "wer": 0.1952,
+      "speaker_count": 2,
+      "latency_ms": 57526,
+      "audio_duration_ms": 265089,
+      "usage": {"input_tokens": 6588, "output_tokens": 599, "estimated_cost_cny": null},
+      "diarization": null,
+      "notes": "The stereo source was normalized to mono 16 kHz FLAC before upload. The public transcript has no timestamps, so DER cannot be calculated."
+    },
+    {
+      "dataset_id": "ami-es2002a",
+      "model": "qwen-audio-3.1-asr-flash-filetrans",
+      "engine": "qwen",
+      "reference_words": 2633,
+      "predicted_words": 2376,
+      "word_edits": 804,
+      "wer": 0.3054,
+      "speaker_count": 4,
+      "latency_ms": 50814,
+      "audio_duration_ms": 1272640,
+      "usage": {"input_tokens": 26545, "output_tokens": 3117, "estimated_cost_cny": null},
+      "diarization": {
+        "der": 0.3546,
+        "speaker_frame_accuracy": 0.8008,
+        "missed_speech_ms": 109800,
+        "false_alarm_ms": 125600,
+        "speaker_confusion_ms": 51200,
+        "frame_ms": 100
+      },
+      "notes": "Real four-speaker AMI evaluation. DER uses the repository's 100 ms frame scorer, where overlapping speech has one active speaker."
+    }
+  ]
+}

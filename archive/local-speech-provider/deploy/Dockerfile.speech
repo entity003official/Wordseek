@@ -1,0 +1,24 @@
+FROM python:3.11-slim-bookworm AS runtime
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1
+
+RUN sed -i 's|http://deb.debian.org|https://deb.debian.org|g' /etc/apt/sources.list.d/debian.sources \
+    && apt-get -o Acquire::Retries=5 update \
+    && apt-get -o Acquire::Retries=5 install -y --no-install-recommends ffmpeg curl \
+    && rm -rf /var/lib/apt/lists/*
+WORKDIR /app
+COPY backend/requirements.txt backend/requirements-asr.txt /app/backend/
+RUN python -m pip install \
+    --index-url https://download.pytorch.org/whl/cpu \
+    --extra-index-url https://pypi.org/simple \
+    torch==2.8.0+cpu torchaudio==2.8.0+cpu
+RUN python -m pip install -r /app/backend/requirements-asr.txt
+COPY backend /app/backend
+COPY alembic.ini /app/alembic.ini
+COPY migrations /app/migrations
+RUN useradd --create-home --uid 10001 appuser && mkdir -p /app/backend/data && chown -R appuser:appuser /app
+USER appuser
+CMD ["celery", "-A", "backend.app.workers.celery_app:celery_app", "worker", "--loglevel=INFO", "--queues=speech", "--concurrency=1"]
+
