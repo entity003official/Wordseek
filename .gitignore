@@ -8,6 +8,7 @@ api-key/
 *.log
 *.zip
 *.tsbuildinfo
+/ci.db
 ~$*
 __pycache__/
 .pytest_cache/
